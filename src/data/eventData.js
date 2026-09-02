@@ -4,7 +4,7 @@ export const EVENT_INFO = {
   tagline: "Where ideas become engineering solutions.",
   date: "15 September 2026",
   time: "9:00 AM – 6:00 PM",
-  venue: "Main Campus Auditorium & Tech Complex",
+  venue: "Faculty of Engineering & Technology-GK (DU) Haridwar 249404",
   targetDateIso: "2026-09-15T09:00:00+05:30",
   // Organizers can replace this URL with their actual Google Form link
   googleFormUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfHiGUVwyPQrC_V0nkOKBGj0pYpmOVNpDVmDsyWEX_-DX6OMA/viewform?usp=publish-editor",
