@@ -52,27 +52,27 @@ const Navbar = ({ onOpenRegister, onOpenScanner }) => {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${
           isScrolled
-            ? 'mt-3 sm:mt-4 w-[72%] max-w-[1360px] mx-auto rounded-full bg-navy-950/8 backdrop-blur-2xl shadow-2xl shadow-navy-950/8 py-2.5 px-4 sm:px-8'
+            ? 'mt-3 sm:mt-4 w-[94%] sm:w-[88%] lg:w-[80%] max-w-[1360px] mx-auto rounded-full bg-navy-950/85 backdrop-blur-2xl shadow-2xl shadow-navy-950/90 py-2 px-3 sm:px-6'
             : 'w-full py-5 px-4 sm:px-8 max-w-[1480px] mx-auto bg-transparent'
         }`}
       >
         <div className="flex items-center justify-between">
           
-          {/* 1. LEFT LOGO & BRAND (Pops Swamiji / Founder Portrait when scrolled) */}
-          <div className="flex items-center gap-3">
+          {/* 1. LEFT LOGO & BRAND (Pops Swamiji / Founder Portrait when scrolled on desktop) */}
+          <div className="flex items-center gap-2.5">
             
-            {/* Pop-in Left Founder Logo (Visible in Scrolled Capsule State) */}
+            {/* Pop-in Left Founder Logo (Visible in Scrolled Capsule State on desktop) */}
             <div
               className={`transition-all duration-500 ease-out transform ${
                 isScrolled
-                  ? 'opacity-100 scale-100 translate-x-0'
-                  : 'opacity-0 scale-75 -translate-x-4 pointer-events-none hidden sm:block'
+                  ? 'opacity-100 scale-100 translate-x-0 hidden md:block'
+                  : 'opacity-0 scale-75 -translate-x-4 pointer-events-none hidden md:block'
               }`}
             >
               <img
                 src="/LogoLatest.webp"
                 alt="Patron Logo"
-                className="w-10 h-10 sm:w-11 sm:h-11 rounded-full object-cover border-2 border-amber-500/60 shadow-lg shadow-amber-500/30 hover:scale-110 transition-transform"
+                className="w-10 h-10 rounded-full object-cover border-2 border-amber-500/60 shadow-lg shadow-amber-500/30 hover:scale-110 transition-transform shrink-0"
                 title="Patron / Founder"
               />
             </div>

@@ -11,9 +11,21 @@ const MobileMenu = ({ isOpen, onClose, navLinks, activeSection, onOpenRegister }
       
       {/* Top Bar */}
       <div className="flex items-center justify-between border-b border-electric-500/20 pb-4">
-        <div className="flex items-center gap-2.5">
-          <EngineeringLogo className="w-9 h-9" />
-          <span className="font-extrabold text-white font-mono text-base">ENG<span className="text-electric-cyan">DAY 2026</span></span>
+        <div className="flex items-center gap-2">
+          <img
+            src="/LogoLatest.webp"
+            alt="Patron Logo"
+            className="w-8 h-8 rounded-full object-cover border border-amber-500/60 shadow-md"
+            title="Patron / Founder"
+          />
+          <EngineeringLogo className="w-8 h-8" />
+          <img
+            src="/logo-left.png"
+            alt="College Seal Logo"
+            className="w-8 h-8 rounded-full object-contain p-0.5 bg-navy-950 border border-electric-cyan/60 shadow-md"
+            title="College Seal Emblem"
+          />
+          <span className="font-extrabold text-white font-mono text-sm ml-1">ENG<span className="text-electric-cyan">DAY 2026</span></span>
         </div>
         <button
           onClick={onClose}
