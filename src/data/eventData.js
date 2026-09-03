@@ -22,155 +22,156 @@ export const EVENT_INFO = {
 
 export const COMPETITIONS = [
   {
-    id: "robo-race",
-    name: "Robo Race",
-    category: "Robotics",
-    teamSize: "2–4 Members",
-    prize: "₹10,000",
-    registrationFee: "₹200 per team",
+    id: "openai-challenge",
+    name: "OpenAI Challenge",
+    category: "Artificial Intelligence",
+    teamSize: "Individual / Group",
+    prize: "Certificates & Rewards",
+    registrationFee: "Free",
     duration: "3 Hours",
-    icon: "Bot",
-    shortDesc: "Design an autonomous or remote-controlled bot to navigate a custom obstacle course in record time.",
-    overview: "Robo Race tests the agility, mechanics, and control of your custom-built robots through a challenging track filled with ramps, gravel, sharp turns, and elevation drops.",
-    problemStatement: "Construct a manual or autonomous wireless robot capable of negotiating a multi-terrain track containing speed bumps, sand traps, narrow bridges, and hairpin turns within the shortest time frame.",
+    icon: "Sparkles",
+    shortDesc: "Build cutting-edge AI prompts, agents, and generative solutions using OpenAI APIs, LLMs, and prompt engineering.",
+    overview: "The OpenAI Challenge tests your ability to leverage modern generative AI, Large Language Models (LLMs), and prompt engineering to build intelligent agents and automated solutions for real-world problems.",
+    problemStatement: "Architect and deploy an AI solution using OpenAI APIs or LLM frameworks to automate a complex task, analyze data, or generate interactive user experiences under time constraints.",
     eligibility: "Open to all undergraduate & diploma engineering students.",
     rules: [
-      "Max bot weight: 5 kg; max dimensions: 30cm x 30cm x 30cm.",
-      "Power source must not exceed 24V DC.",
-      "AC power supply will not be provided on the arena track.",
-      "Lego kits or pre-assembled commercial chassis are strictly prohibited.",
-      "In case of ties, lap times and penalty counts will determine the winner."
+      "Participation can be individual or in a group.",
+      "OpenAI API keys / LLM playground tools are permitted.",
+      "All prompts and code must be developed live during the event duration.",
+      "Final solution must be demonstrated with a live working output."
     ],
     judgingCriteria: [
-      "Track completion speed (40%)",
-      "Control accuracy & smooth navigation (30%)",
-      "Technical design & chassis stability (20%)",
-      "Safety & compliance with size limits (10%)"
+      "Prompt design & AI Agent intelligence (35%)",
+      "Functionality & Problem Solving (30%)",
+      "User Experience & Innovation (20%)",
+      "Final Pitch & Demo (15%)"
     ],
     requiredMaterials: [
-      "Custom Wireless Bot (RF, Bluetooth, or Wi-Fi)",
-      "Spare Batteries & Charger",
-      "Basic Tool Kit & Soldering Iron"
+      "Personal Laptop & Charger",
+      "Pre-configured development environment / API credentials"
     ],
-    instructions: "Arrive 30 minutes prior to the event for technical inspection and dimensions check at Arena A."
+    instructions: "Check-in at the Computer Lab Complex at 10:00 AM. High-speed Wi-Fi provided."
   },
   {
-    id: "engineering-hackathon",
-    name: "Engineering Hackathon",
-    category: "Software / Technology",
-    teamSize: "2–4 Members",
-    prize: "₹15,000",
+    id: "project-exhibition",
+    name: "Project Exhibition",
+    category: "Innovation & Hardware",
+    teamSize: "Individual / Group",
+    prize: "Certificates & Trophies",
     registrationFee: "Free",
-    duration: "6 Hours",
-    icon: "Code",
-    shortDesc: "Build real-world web, mobile, or AI prototypes to tackle pressing campus and urban sustainability challenges.",
-    overview: "The flagship software event where code meets real impact. Teams brainstorm, architect, code, and pitch functional software solutions within 6 intense hours.",
-    problemStatement: "Develop a working software application addressing one of three tracks: Smart Campus Management, AI for Sustainable Energy, or Student Mental Health Tech.",
-    eligibility: "Open to all students from CS, IT, ECE, Data Science, and allied departments.",
+    duration: "Full Day",
+    icon: "Lightbulb",
+    shortDesc: "Showcase working engineering prototypes, hardware models, IoT devices, and innovative software solutions to jury & visitors.",
+    overview: "The grand exhibition stage for student inventors. Exhibit your semester projects, hardware prototypes, IoT systems, civil structures, or software applications to expert faculty and visitors.",
+    problemStatement: "Set up a working booth demonstrating your engineering project, explaining the problem statement, prototype architecture, circuit/software design, and real-world impact.",
+    eligibility: "Open to all engineering branches (CS, ECE, EEE, Civil, Mechanical).",
     rules: [
-      "All code must be written during the hackathon hours.",
-      "Third-party APIs, open-source libraries, and AI coding helpers are permitted.",
-      "Code must be pushed to a public GitHub repository.",
-      "A live 3-minute project demonstration is required during final evaluation."
+      "Individual or team entries are permitted.",
+      "Projects must have a functional physical prototype or live software demo.",
+      "Teams must display a technical poster explaining project objectives and specs.",
+      "Jury members will visit booths for live Q&A evaluation."
     ],
     judgingCriteria: [
-      "Innovation & Originality (30%)",
-      "Technical Execution & Working Prototype (30%)",
-      "UI/UX Design & User Experience (20%)",
-      "Impact & Pitch Presentation (20%)"
+      "Innovation & Working Prototype Quality (40%)",
+      "Technical Complexity & Engineering Soundness (30%)",
+      "Practical Utility & Real-World Application (15%)",
+      "Presentation & Q&A Response (15%)"
     ],
     requiredMaterials: [
-      "Personal Laptops & Chargers",
-      "Pre-installed IDEs and Dev Environments"
+      "Working Hardware/Software Prototype",
+      "Project Poster / Specs Sheet",
+      "Extension board (if power needed)"
     ],
-    instructions: "Check-in at the Computer Lab Complex at 10:00 AM sharp. High-speed Wi-Fi provided."
+    instructions: "Booths will be assigned at Central Exhibition Hall by 09:30 AM."
   },
   {
-    id: "circuit-challenge",
-    name: "Circuit Challenge",
-    category: "Electrical & Electronics",
-    teamSize: "2–3 Members",
-    prize: "₹5,000",
-    registrationFee: "₹100 per team",
-    duration: "2.5 Hours",
-    icon: "Cpu",
-    shortDesc: "Debug, simulate, and wire high-speed analog/digital electronic circuits under time constraints.",
-    overview: "Put your hardware knowledge, breadboard wiring speed, and oscilloscope troubleshooting skills to the ultimate test in this multi-round hardware challenge.",
-    problemStatement: "Identify faults in a faulty circuit schematic, simulate corrected logic on Proteus/Multisim, and physically assemble the functional circuit on a breadboard.",
-    eligibility: "Open to ECE, EEE, EIE, and Mechatronics students.",
-    rules: [
-      "Round 1: Circuit Debugging Written Quiz (20 mins).",
-      "Round 2: Software Circuit Simulation (45 mins).",
-      "Round 3: Hardware Breadboard Assembly & Signal Testing (60 mins).",
-      "Component damage due to reverse polarity incurs penalty points."
-    ],
-    judgingCriteria: [
-      "Accuracy of output waveform on oscilloscope (40%)",
-      "Wiring neatness & component optimization (30%)",
-      "Debugging speed in Round 1 & 2 (30%)"
-    ],
-    requiredMaterials: [
-      "Breadboard and basic jumper wires (Provided on spot)",
-      "Digital Multimeter (Optional to bring own)"
-    ],
-    instructions: "Report to Electrical Lab 3. Workstations and component kits will be assigned upon entry."
-  },
-  {
-    id: "bridge-building",
-    name: "Bridge Building Challenge",
-    category: "Civil Engineering",
-    teamSize: "2–4 Members",
-    prize: "₹7,000",
-    registrationFee: "₹150 per team",
-    duration: "3 Hours",
-    icon: "Building2",
-    shortDesc: "Engineer a lightweight popsicle stick bridge to withstand maximum load capacity before failure.",
-    overview: "Demonstrate structural analysis principles by designing, constructing, and testing a truss bridge model using only Popsicle sticks and adhesive.",
-    problemStatement: "Construct a truss bridge spanning a clear 50 cm gap with maximum structural efficiency (Load Sustained / Self-Weight of Bridge).",
-    eligibility: "Open to Civil, Mechanical, and Structural engineering students.",
-    rules: [
-      "Only provided Popsicle sticks and PVA glue can be used.",
-      "Max bridge weight: 250 grams; Minimum span length: 50 cm.",
-      "Bridges will be subjected to hydraulic vertical point loading until breakdown."
-    ],
-    judgingCriteria: [
-      "Efficiency ratio = Ultimate Load Sustained / Self-Weight (60%)",
-      "Aesthetic design & truss symmetry (20%)",
-      "Compliance with dimensional constraints (20%)"
-    ],
-    requiredMaterials: [
-      "Popsicle sticks & Glue provided at workshop",
-      "Cutter, Ruler & Sandpaper"
-    ],
-    instructions: "Materials will be handed out at Civil Structures Lab at 10:30 AM."
-  },
-  {
-    id: "cad-design",
-    name: "CAD Design Challenge",
-    category: "Mechanical / Design",
-    teamSize: "1–2 Members",
-    prize: "₹5,000",
-    registrationFee: "₹100",
+    id: "poster-presentation",
+    name: "Poster Presentation",
+    category: "Research & Design",
+    teamSize: "Individual / Group",
+    prize: "Certificates & Awards",
+    registrationFee: "Free",
     duration: "2 Hours",
     icon: "Compass",
-    shortDesc: "Transform complex 2D technical drawings into parametric 3D CAD models using SolidWorks or AutoCAD.",
-    overview: "Test your speed, precision, and geometric modeling capabilities by converting detailed engineering blueprints into 3D CAD components.",
-    problemStatement: "Model a multi-part mechanical assembly from given 2D orthographic projections, assign proper material densities, and compute total mass and center of gravity.",
-    eligibility: "Open to Mechanical, Automobile, Aerospace, and Mechatronics students.",
+    shortDesc: "Present technical paper concepts, architectural designs, sustainable engineering, and research findings through creative posters.",
+    overview: "A platform for aspiring researchers and engineers to articulate innovative ideas, emerging technology trends, and sustainable engineering concepts using visual technical posters.",
+    problemStatement: "Design and visually present a comprehensive technical poster on cutting-edge topics such as Renewable Energy, AI in Healthcare, Smart Infrastructure, or Quantum Computing.",
+    eligibility: "Open to all undergraduate & diploma engineering students.",
     rules: [
-      "Permitted software: SolidWorks, Fusion 360, or AutoCAD.",
-      "Final model must be submitted in STEP and native CAD format.",
-      "Dimension tolerances must strictly match specifications."
+      "Individual or team participation.",
+      "Standard poster dimensions: A1 size (or printed 3ft x 2ft banner).",
+      "Plagiarism in content or diagrams will lead to disqualification.",
+      "Each team gets 5 minutes to present to jury panel followed by 2 minutes Q&A."
     ],
     judgingCriteria: [
-      "3D Model Dimensional Accuracy (50%)",
-      "Parametric feature tree organization (25%)",
-      "Completion speed (25%)"
+      "Clarity of Concept & Research Depth (35%)",
+      "Visual Design, Layout & Neatness (30%)",
+      "Innovation & Technical Soundness (20%)",
+      "Presentation & Communication Skills (15%)"
     ],
     requiredMaterials: [
-      "CAD Workstations provided (You can also bring personal laptop with licensed CAD software)"
+      "Printed Technical Poster (A1 / 3ft x 2ft)",
+      "Push pins or mounting tape"
     ],
-    instructions: "Mechanical CAD Lab 2. Session begins at 02:00 PM."
+    instructions: "Mount posters at Seminar Hall 1 by 11:00 AM."
+  },
+  {
+    id: "debugging",
+    name: "Debugging",
+    category: "Software Coding",
+    teamSize: "Individual",
+    prize: "Certificates & Rewards",
+    registrationFee: "Free",
+    duration: "1.5 Hours",
+    icon: "Code",
+    shortDesc: "Hunt down bugs, fix syntax/logic flaws, and optimize broken code snippets under intense time constraints.",
+    overview: "Speed and precision meet code logic. Debugging challenges your ability to trace erroneous code, fix hidden memory/logic bugs, and optimize execution speed across C, C++, Python, or Java.",
+    problemStatement: "Correct faulty code snippets containing logical bugs, runtime exceptions, and edge-case failures within the shortest time possible.",
+    eligibility: "Individual entry. Open to all students.",
+    rules: [
+      "Strictly individual participation.",
+      "No external internet searching or AI assistants allowed during test rounds.",
+      "Round 1: Speed bug fixing written/online quiz.",
+      "Round 2: Complex algorithm debugging on compiler platform."
+    ],
+    judgingCriteria: [
+      "Number of test cases passed (60%)",
+      "Time taken to submit correct code (30%)",
+      "Code cleanliness & formatting (10%)"
+    ],
+    requiredMaterials: [
+      "Computers provided in CS Lab",
+      "Pen & scratch paper"
+    ],
+    instructions: "Report to Computer Lab 2 at 02:00 PM."
+  },
+  {
+    id: "quiz-computer",
+    name: "Quiz Computer",
+    category: "Technical Quiz",
+    teamSize: "Individual",
+    prize: "Certificates & Prizes",
+    registrationFee: "Free",
+    duration: "1 Hour",
+    icon: "HelpCircle",
+    shortDesc: "Test your computer science fundamentals, tech trivia, IT history, programming concepts, and engineering logic.",
+    overview: "The ultimate battle of CS minds! Quiz Computer tests rapid recall of computer hardware, software engineering history, networking, algorithms, and tech industry trivia.",
+    problemStatement: "Answer multiple-choice and buzzer questions covering programming fundamentals, IT trivia, cyber security, computer organization, and tech icons.",
+    eligibility: "Strictly individual participation.",
+    rules: [
+      "Individual entry.",
+      "Round 1: Written Multiple-Choice Screening (20 mins).",
+      "Round 2: Rapid-fire Buzzer & Visual Round for Top 6 Qualifiers.",
+      "Use of mobile phones during quiz rounds is strictly forbidden."
+    ],
+    judgingCriteria: [
+      "Screening test score in Round 1 (50%)",
+      "Buzzer round accuracy & speed in Round 2 (50%)"
+    ],
+    requiredMaterials: [
+      "Pen & scratch paper provided"
+    ],
+    instructions: "Assembling at Main Lecture Hall at 03:30 PM."
   }
 ];
 

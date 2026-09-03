@@ -14,7 +14,8 @@ const iconMap = {
   Building2,
   Compass,
   Lightbulb,
-  Gamepad2
+  Gamepad2,
+  Sparkles
 };
 
 const Events = ({ onRegister }) => {
