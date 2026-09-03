@@ -1,35 +1,7 @@
 import React from 'react';
-import { Users, Award, Layers, Cpu, Compass, Flame } from 'lucide-react';
-import { EVENT_INFO } from '../data/eventData';
+import { Cpu, Layers, Compass, Flame } from 'lucide-react';
 
 const About = () => {
-  const stats = [
-    {
-      number: EVENT_INFO.stats.participants,
-      label: "Participants",
-      desc: "Innovators from across top technical colleges",
-      icon: Users,
-    },
-    {
-      number: EVENT_INFO.stats.competitions,
-      label: "Competitions",
-      desc: "Across Robotics, AI, Circuits, Civil & Mechanical",
-      icon: Award,
-    },
-    {
-      number: "8+",
-      label: "Tech Domains",
-      desc: "Software, Hardware, Civil, CAD & Gaming",
-      icon: Cpu,
-    },
-    {
-      number: "100%",
-      label: "Hands-On",
-      desc: "Real-world engineering prototype testing",
-      icon: Layers,
-    }
-  ];
-
   const highlights = [
     {
       title: "Hands-on Problem Solving",
@@ -69,32 +41,6 @@ const About = () => {
           <p className="mt-6 text-base sm:text-lg text-slate-300 leading-relaxed">
             “Engineering Day 2026 brings together students, innovators, developers, designers, and problem-solvers to transform ideas into practical solutions through technology, creativity, and teamwork.”
           </p>
-        </div>
-
-        {/* Statistics Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-16">
-          {stats.map((stat, idx) => {
-            const Icon = stat.icon;
-            return (
-              <div
-                key={idx}
-                className="glass-panel p-6 rounded-2xl border-electric-500/20 text-center glass-panel-hover group relative overflow-hidden"
-              >
-                <div className="w-12 h-12 rounded-xl bg-electric-500/10 border border-electric-500/30 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                  <Icon className="w-6 h-6 text-electric-cyan" />
-                </div>
-                <div className="text-3xl sm:text-4xl font-extrabold text-white font-mono tracking-tight mb-1">
-                  {stat.number}
-                </div>
-                <div className="text-sm font-semibold text-electric-cyan uppercase tracking-wider mb-2 font-mono">
-                  {stat.label}
-                </div>
-                <p className="text-xs text-slate-400 leading-snug">
-                  {stat.desc}
-                </p>
-              </div>
-            );
-          })}
         </div>
 
         {/* Highlight Cards Grid */}
