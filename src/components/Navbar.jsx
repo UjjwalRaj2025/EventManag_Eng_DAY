@@ -51,7 +51,7 @@ const Navbar = ({ onOpenRegister, onOpenScanner }) => {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${
           isScrolled
-            ? 'mt-2 sm:mt-4 w-[96%] sm:w-[92%] lg:w-[85%] max-w-[1400px] mx-auto rounded-full bg-navy-950/90 backdrop-blur-2xl shadow-2xl shadow-navy-950/90 py-2 px-3 sm:px-6 border border-electric-500/20'
+            ? 'mt-2 sm:mt-4 w-[96%] sm:w-[92%] lg:w-[85%] max-w-[1400px] mx-auto rounded-full bg-navy-950/90 backdrop-blur-2xl shadow-2xl shadow-navy-950/90 py-2 px-3 sm:px-6'
             : 'w-full py-4 sm:py-5 px-3 sm:px-8 max-w-[1480px] mx-auto bg-transparent'
         }`}
       >
