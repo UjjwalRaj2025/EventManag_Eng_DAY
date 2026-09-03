@@ -38,7 +38,7 @@ const Footer = ({ onOpenRegister }) => {
               <li><a href="#home" className="hover:text-electric-cyan transition-colors">Home</a></li>
               <li><a href="#about" className="hover:text-electric-cyan transition-colors">About Festival</a></li>
               <li><a href="#events" className="hover:text-electric-cyan transition-colors">Competitions</a></li>
-              <li><a href="#schedule" className="hover:text-electric-cyan transition-colors">Timeline Schedule</a></li>
+              <li><a href="#contact" className="hover:text-electric-cyan transition-colors">Coordinators</a></li>
               <li><a href="#faq" className="hover:text-electric-cyan transition-colors">FAQ</a></li>
             </ul>
           </div>
@@ -49,11 +49,11 @@ const Footer = ({ onOpenRegister }) => {
               Competitions
             </h4>
             <ul className="space-y-2">
-              <li><a href="#events" className="hover:text-electric-cyan transition-colors">Robo Race</a></li>
-              <li><a href="#events" className="hover:text-electric-cyan transition-colors">Engineering Hackathon</a></li>
-              <li><a href="#events" className="hover:text-electric-cyan transition-colors">Circuit Challenge</a></li>
-              <li><a href="#events" className="hover:text-electric-cyan transition-colors">Bridge Building</a></li>
-              <li><a href="#events" className="hover:text-electric-cyan transition-colors">CAD Design</a></li>
+              <li><a href="#events" className="hover:text-electric-cyan transition-colors">OpenAI Challenge</a></li>
+              <li><a href="#events" className="hover:text-electric-cyan transition-colors">Project Exhibition</a></li>
+              <li><a href="#events" className="hover:text-electric-cyan transition-colors">Poster Presentation</a></li>
+              <li><a href="#events" className="hover:text-electric-cyan transition-colors">Debugging</a></li>
+              <li><a href="#events" className="hover:text-electric-cyan transition-colors">Computer Quiz</a></li>
             </ul>
           </div>
 

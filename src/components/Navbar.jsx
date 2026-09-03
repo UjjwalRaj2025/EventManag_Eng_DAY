@@ -13,7 +13,6 @@ const Navbar = ({ onOpenRegister }) => {
     { name: 'HOME', href: '#home' },
     { name: 'ABOUT', href: '#about' },
     { name: 'EVENTS', href: '#events' },
-    { name: 'SCHEDULE', href: '#schedule' },
     { name: 'FAQ', href: '#faq' },
     { name: 'CONTACT', href: '#contact' },
   ];
@@ -24,7 +23,7 @@ const Navbar = ({ onOpenRegister }) => {
       setIsScrolled(window.scrollY > 50);
 
       // Detect active section on scroll
-      const sections = ['home', 'about', 'events', 'schedule', 'faq', 'contact'];
+      const sections = ['home', 'about', 'events', 'faq', 'contact'];
       const current = sections.find((section) => {
         const el = document.getElementById(section);
         if (el) {
