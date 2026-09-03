@@ -49,7 +49,7 @@ const Navbar = ({ onOpenRegister }) => {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${
           isScrolled
-            ? 'mt-2.5 sm:mt-4 w-[96%] sm:w-[92%] lg:w-[86%] max-w-[1480px] mx-auto rounded-full bg-navy-950/90 backdrop-blur-2xl shadow-2xl shadow-navy-950/90 py-3 px-4 sm:px-8'
+            ? 'mt-2.5 sm:mt-4 w-[96%] sm:w-[92%] lg:w-[86%] max-w-[1480px] mx-auto rounded-full bg-navy-950/5 backdrop-blur-2xl shadow-2xl shadow-navy-950/5 py-3 px-4 sm:px-8'
             : 'w-full py-5 sm:py-7 px-4 sm:px-10 max-w-[1540px] mx-auto bg-transparent'
         }`}
       >
