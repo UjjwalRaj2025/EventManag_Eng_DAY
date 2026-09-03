@@ -9,11 +9,9 @@ import Contact from './components/Contact';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import RegistrationModal from './components/RegistrationModal';
-import AttendanceScannerModal from './components/AttendanceScannerModal';
 
 function App() {
   const [isRegisterOpen, setIsRegisterOpen] = useState(false);
-  const [isScannerOpen, setIsScannerOpen] = useState(false);
   const [selectedEventName, setSelectedEventName] = useState('');
 
   const handleOpenRegister = (eventName = '') => {
@@ -33,10 +31,7 @@ function App() {
       <CircuitCanvas />
 
       {/* Navigation Header */}
-      <Navbar
-        onOpenRegister={() => handleOpenRegister()}
-        onOpenScanner={() => setIsScannerOpen(true)}
-      />
+      <Navbar onOpenRegister={() => handleOpenRegister()} />
 
       {/* Main Content Sections */}
       <main className="relative z-10">
@@ -67,12 +62,6 @@ function App() {
         isOpen={isRegisterOpen}
         onClose={handleCloseRegister}
         defaultEvent={selectedEventName}
-      />
-
-      {/* Gate Attendance Verification Scanner Modal */}
-      <AttendanceScannerModal
-        isOpen={isScannerOpen}
-        onClose={() => setIsScannerOpen(false)}
       />
 
     </div>

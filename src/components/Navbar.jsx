@@ -4,7 +4,7 @@ import { EVENT_INFO } from '../data/eventData';
 import MobileMenu from './MobileMenu';
 import EngineeringLogo from './EngineeringLogo';
 
-const Navbar = ({ onOpenRegister, onOpenScanner }) => {
+const Navbar = ({ onOpenRegister }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
@@ -116,17 +116,6 @@ const Navbar = ({ onOpenRegister, onOpenScanner }) => {
 
           {/* 3. RIGHT SIDE: REGISTER CTA + ALWAYS-VISIBLE COLLEGE SEAL LOGO */}
           <div className="flex items-center gap-2 sm:gap-3 shrink-0">
-            
-            {/* Gate Scan Button (Desktop only) */}
-            {onOpenScanner && (
-              <button
-                onClick={onOpenScanner}
-                className="hidden xl:flex rounded-full px-3.5 py-1.5 text-xs font-mono font-bold uppercase tracking-wider text-emerald-400 border border-emerald-500/40 bg-emerald-500/10 hover:bg-emerald-500 hover:text-white transition-all duration-300 items-center gap-1 shrink-0"
-                title="Gate Attendance Verification Scanner"
-              >
-                <span>Gate Scan</span>
-              </button>
-            )}
 
             {/* Register CTA Button */}
             <button
