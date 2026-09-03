@@ -53,7 +53,7 @@ const Footer = ({ onOpenRegister }) => {
               <li><a href="#events" className="hover:text-electric-cyan transition-colors">Project Exhibition</a></li>
               <li><a href="#events" className="hover:text-electric-cyan transition-colors">Poster Presentation</a></li>
               <li><a href="#events" className="hover:text-electric-cyan transition-colors">Debugging</a></li>
-              <li><a href="#events" className="hover:text-electric-cyan transition-colors">Computer Quiz</a></li>
+              <li><a href="#events" className="hover:text-electric-cyan transition-colors">Quiz Competition</a></li>
             </ul>
           </div>
 

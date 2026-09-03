@@ -146,8 +146,8 @@ export const COMPETITIONS = [
     instructions: "Report to Computer Lab 2 at 02:00 PM."
   },
   {
-    id: "quiz-computer",
-    name: "Quiz Computer",
+    id: "quiz-competition",
+    name: "Quiz Competition",
     category: "Technical Quiz",
     teamSize: "Individual",
     prize: "Certificates & Prizes",
@@ -155,7 +155,7 @@ export const COMPETITIONS = [
     duration: "1 Hour",
     icon: "HelpCircle",
     shortDesc: "Test your computer science fundamentals, tech trivia, IT history, programming concepts, and engineering logic.",
-    overview: "The ultimate battle of CS minds! Quiz Computer tests rapid recall of computer hardware, software engineering history, networking, algorithms, and tech industry trivia.",
+    overview: "The ultimate battle of CS minds! Quiz Competition tests rapid recall of computer hardware, software engineering history, networking, algorithms, and tech industry trivia.",
     problemStatement: "Answer multiple-choice and buzzer questions covering programming fundamentals, IT trivia, cyber security, computer organization, and tech icons.",
     eligibility: "Strictly individual participation.",
     rules: [
