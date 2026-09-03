@@ -7,7 +7,7 @@ export const EVENT_INFO = {
   venue: "Main Campus Auditorium & Tech Complex",
   targetDateIso: "2026-09-15T09:00:00+05:30",
   // Organizers can replace this URL with their actual Google Form link
-  googleFormUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfHiGUVwyPQrC_V0nkOKBGj0pYpmOVNpDVmDsyWEX_-DX6OMA/viewform?usp=publish-editor",
+  googleFormUrl: "https://forms.gle/UbMhMjN5DvDqteMY6",
   collegeLogos: [
     { id: 1, name: "College Emblem", badgeText: "COLLEGE LOGO 1" },
     { id: 2, name: "Autonomous / NAAC A+", badgeText: "COLLEGE LOGO 2" }
