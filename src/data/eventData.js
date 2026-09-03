@@ -404,39 +404,23 @@ export const GALLERY_IMAGES = [
 export const FAQS = [
   {
     q: "Who can participate in Engineering Day 2026?",
-    a: "Participation is open to all engineering, polytechnic, technology, B.Tech, diploma, and computer application students from any recognized institute."
-  },
-  {
-    q: "Is participation open to students from other colleges?",
-    a: "Yes! Inter-college participation is warmly welcomed across all 5 events and competitions."
-  },
-  {
-    q: "Can I participate individually or do I need a team?",
-    a: "Debugging and Quiz Competition are strictly for individual participants. OpenAI Challenge, Project Exhibition, and Poster Presentation support both Individual and Group entries!"
-  },
-  {
-    q: "How does registration on Google Forms work?",
-    a: "Click 'REGISTER' on any event card to open our official Google Form directly inside a modal or generate your instant digital ticket pass!"
+    a: "Open to all engineering, polytechnic, B.Tech, diploma, and computer application students from any college or institute."
   },
   {
     q: "What is the registration fee?",
-    a: "All 5 competitions (OpenAI Challenge, Project Exhibition, Poster Presentation, Debugging, and Quiz Competition) are 100% FREE for all students!"
+    a: "All 5 events (OpenAI Challenge, Project Exhibition, Poster Presentation, Debugging, and Quiz Competition) are 100% FREE for all participants!"
+  },
+  {
+    q: "Can I participate individually or in a team?",
+    a: "Debugging and Quiz Competition are for individual participants. OpenAI Challenge, Project Exhibition, and Poster Presentation support both Individual and Group entries."
   },
   {
     q: "Will participants receive certificates?",
-    a: "Yes, all verified attendees and participants will receive accredited Certificates of Participation. Winners receive official Winner Certificates and awards."
+    a: "Yes! All verified participants receive official Certificates of Participation, and winners receive Winner Certificates and trophies."
   },
   {
-    q: "Can I participate in multiple events?",
-    a: "Yes, you can register for multiple events as long as your participation slots do not overlap."
-  },
-  {
-    q: "What should I bring on the event day?",
-    a: "Please bring a valid college ID card, your digital or printed registration pass, personal laptop & charger (for OpenAI Challenge & Debugging), and your working prototype/poster (for Exhibition & Poster Presentation)."
-  },
-  {
-    q: "How will winners be selected?",
-    a: "Each competition is evaluated by an expert faculty jury using predefined scoring criteria based on innovation, technical correctness, speed, and presentation."
+    q: "How do I register for events?",
+    a: "Click the 'REGISTER' button on any competition card to fill out the form and instantly generate your digital event entry pass."
   }
 ];
 
