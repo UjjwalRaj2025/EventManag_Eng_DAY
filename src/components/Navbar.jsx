@@ -51,7 +51,7 @@ const Navbar = ({ onOpenRegister }) => {
           isScrolled
             ? 'mt-2.5 sm:mt-4 w-[96%] sm:w-[92%] lg:w-[86%] max-w-[1480px] mx-auto rounded-full bg-navy-950/5 backdrop-blur-2xl shadow-2xl shadow-navy-950/5 py-3 px-4 sm:px-8'
             : 'w-full py-5 sm:py-7 px-4 sm:px-10 max-w-[1540px] mx-auto bg-transparent'
-        }`}
+        }`} 
       >
         <div className="flex items-center justify-between gap-3 sm:gap-4">
           

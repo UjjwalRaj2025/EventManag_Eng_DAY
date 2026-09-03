@@ -3,9 +3,9 @@ export const EVENT_INFO = {
   theme: "Innovate. Engineer. Transform.",
   tagline: "Where ideas become engineering solutions.",
   date: "15 September 2026",
-  time: "9:00 AM – 6:00 PM",
-  venue: "Main Campus Auditorium & Tech Complex",
-  targetDateIso: "2026-09-15T09:00:00+05:30",
+  time: "10:00 AM – 4:00 PM",
+  venue: "Faculty of Engineering & Technology- GK (DU) Haridwar 249404",
+  targetDateIso: "2026-09-15T10:00:00+05:30",
   // Organizers can replace this URL with their actual Google Form link
   googleFormUrl: "https://forms.gle/UbMhMjN5DvDqteMY6",
   collegeLogos: [
@@ -194,7 +194,7 @@ export const FEATURED_EVENT = {
 
 export const SCHEDULE = [
   {
-    time: "09:00 AM",
+    time: "10:00 AM",
     title: "Registration & Check-in",
     category: "Ceremonies",
     location: "Main Auditorium Foyer",
@@ -243,7 +243,7 @@ export const SCHEDULE = [
     desc: "Awarding trophies, cash prizes of ₹50,000+, certificates, and sponsor goodies."
   },
   {
-    time: "06:00 PM",
+    time: "04:00 PM",
     title: "Closing Ceremony & Group Photo",
     category: "Ceremonies",
     location: "Main Campus Lawn",
@@ -429,7 +429,7 @@ export const CONTACT_INFO = {
   address: "College Campus, Academic Block III, Innovation & Robotics Floor",
   cityStatePin: "Tech City, Pin 400001",
   date: "15 September 2026",
-  time: "9:00 AM – 6:00 PM",
+  time: "10:00 AM – 4:00 PM",
   email: "engineeringday2026@college.edu",
   facultyCoordinators: [
     {
