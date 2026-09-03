@@ -404,39 +404,39 @@ export const GALLERY_IMAGES = [
 export const FAQS = [
   {
     q: "Who can participate in Engineering Day 2026?",
-    a: "Participation is open to all engineering, polytechnic, technology, science, and computer application students from any recognized college or university."
+    a: "Participation is open to all engineering, polytechnic, technology, B.Tech, diploma, and computer application students from any recognized institute."
   },
   {
     q: "Is participation open to students from other colleges?",
-    a: "Yes! We warmly welcome inter-college participation across all competitions, workshops, and project showcases."
+    a: "Yes! Inter-college participation is warmly welcomed across all 5 events and competitions."
   },
   {
     q: "Can I participate individually or do I need a team?",
-    a: "Some events like Tech Quiz and CAD Challenge allow individual entries, while team events like Hackathon, Robo Race, and Innovation Challenge require 2 to 5 members."
+    a: "Debugging and Quiz Competition are strictly for individual participants. OpenAI Challenge, Project Exhibition, and Poster Presentation support both Individual and Group entries!"
   },
   {
     q: "How does registration on Google Forms work?",
-    a: "You can click 'Register Now' on any event card to open our official Google Form directly inside a modal or in a new tab, or use our built-in instant ticket generator!"
+    a: "Click 'REGISTER' on any event card to open our official Google Form directly inside a modal or generate your instant digital ticket pass!"
   },
   {
     q: "What is the registration fee?",
-    a: "Major events like the Engineering Hackathon, Innovation Challenge, and Tech Quiz are completely FREE! Other specialized hardware events carry a nominal team fee (₹100–₹200) to cover venue components."
+    a: "All 5 competitions (OpenAI Challenge, Project Exhibition, Poster Presentation, Debugging, and Quiz Competition) are 100% FREE for all students!"
   },
   {
     q: "Will participants receive certificates?",
-    a: "Yes, all verified attendees and participants will receive accredited digital Certificates of Participation. Winners receive physical Winner Certificates and trophies."
+    a: "Yes, all verified attendees and participants will receive accredited Certificates of Participation. Winners receive official Winner Certificates and awards."
   },
   {
     q: "Can I participate in multiple events?",
-    a: "Yes, provided the event timings do not overlap in the official Schedule."
+    a: "Yes, you can register for multiple events as long as your participation slots do not overlap."
   },
   {
     q: "What should I bring on the event day?",
-    a: "Please bring a valid college ID card, your registration pass (digital or printed), personal laptops/chargers (for software/hackathon events), and any specific project hardware required."
+    a: "Please bring a valid college ID card, your digital or printed registration pass, personal laptop & charger (for OpenAI Challenge & Debugging), and your working prototype/poster (for Exhibition & Poster Presentation)."
   },
   {
     q: "How will winners be selected?",
-    a: "Each competition has a transparent, predefined scoring rubrics evaluated by an expert panel of professors and industry professionals."
+    a: "Each competition is evaluated by an expert faculty jury using predefined scoring criteria based on innovation, technical correctness, speed, and presentation."
   }
 ];
 
