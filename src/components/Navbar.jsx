@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Cpu, Menu, ChevronRight } from 'lucide-react';
+import { Menu, ChevronRight } from 'lucide-react';
 import { EVENT_INFO } from '../data/eventData';
 import MobileMenu from './MobileMenu';
 import EngineeringLogo from './EngineeringLogo';
@@ -45,49 +45,41 @@ const Navbar = ({ onOpenRegister, onOpenScanner }) => {
     <>
       {/* 
         Capsule Floating Glass Navbar
-        - Morphs into a rounded-full pill capsule on scroll
-        - Pop-in Dual Logos on Left & Right when capsule is active
-        - Smooth cubic-bezier transition (duration-700)
+        - Always renders both Patron Portrait (left) and College Seal (right) on phone & desktop
+        - Morphs smoothly into a floating pill on scroll
       */}
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${
           isScrolled
-            ? 'mt-3 sm:mt-4 w-[94%] sm:w-[88%] lg:w-[80%] max-w-[1360px] mx-auto rounded-full bg-navy-950/85 backdrop-blur-2xl shadow-2xl shadow-navy-950/90 py-2 px-3 sm:px-6'
-            : 'w-full py-5 px-4 sm:px-8 max-w-[1480px] mx-auto bg-transparent'
+            ? 'mt-2 sm:mt-4 w-[96%] sm:w-[92%] lg:w-[85%] max-w-[1400px] mx-auto rounded-full bg-navy-950/90 backdrop-blur-2xl shadow-2xl shadow-navy-950/90 py-2 px-3 sm:px-6 border border-electric-500/20'
+            : 'w-full py-4 sm:py-5 px-3 sm:px-8 max-w-[1480px] mx-auto bg-transparent'
         }`}
       >
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-2">
           
-          {/* 1. LEFT LOGO & BRAND (Pops Swamiji / Founder Portrait when scrolled on desktop) */}
-          <div className="flex items-center gap-2.5">
+          {/* 1. LEFT SIDE: PATRON LOGO + BRAND TITLE */}
+          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
             
-            {/* Pop-in Left Founder Logo (Visible in Scrolled Capsule State on desktop) */}
-            <div
-              className={`transition-all duration-500 ease-out transform ${
-                isScrolled
-                  ? 'opacity-100 scale-100 translate-x-0 hidden md:block'
-                  : 'opacity-0 scale-75 -translate-x-4 pointer-events-none hidden md:block'
-              }`}
-            >
+            {/* Always-visible Left Patron Logo (Swamiji Portrait) */}
+            <a href="#home" title="Patron / Founder" className="shrink-0">
               <img
                 src="/LogoLatest.webp"
                 alt="Patron Logo"
-                className="w-10 h-10 rounded-full object-cover border-2 border-amber-500/60 shadow-lg shadow-amber-500/30 hover:scale-110 transition-transform shrink-0"
-                title="Patron / Founder"
+                className="w-8 h-8 sm:w-10 sm:h-10 rounded-full object-cover border-2 border-amber-500/60 shadow-md shadow-amber-500/20 hover:scale-105 transition-transform"
               />
-            </div>
+            </a>
 
             {/* Main Brand Logo & Title */}
-            <a href="#home" className="flex items-center gap-2.5 group">
-              <EngineeringLogo className="w-10 h-10" />
+            <a href="#home" className="flex items-center gap-1.5 sm:gap-2.5 group">
+              <EngineeringLogo className="w-7 h-7 sm:w-9 sm:h-9 shrink-0" />
               <div>
-                <div className="font-extrabold tracking-wider text-sm sm:text-base text-white font-mono flex items-center gap-1">
+                <div className="font-extrabold tracking-wider text-xs sm:text-base text-white font-mono flex items-center gap-1">
                   ENG<span className="text-electric-cyan">DAY</span>
-                  <span className="text-[9px] bg-electric-500/20 text-electric-cyan border border-electric-500/40 px-1 py-0.2 rounded font-mono font-bold">
+                  <span className="text-[8px] sm:text-[9px] bg-electric-500/20 text-electric-cyan border border-electric-500/40 px-1 py-0.2 rounded font-mono font-bold">
                     2026
                   </span>
                 </div>
-                <div className="text-[9px] text-slate-400 font-mono tracking-widest uppercase hidden md:block">
+                <div className="text-[8px] sm:text-[9px] text-slate-400 font-mono tracking-widest uppercase hidden md:block">
                   {EVENT_INFO.theme}
                 </div>
               </div>
@@ -95,7 +87,7 @@ const Navbar = ({ onOpenRegister, onOpenScanner }) => {
 
           </div>
 
-          {/* 2. CENTERED NAVIGATION LINKS */}
+          {/* 2. CENTERED NAVIGATION LINKS (Desktop only) */}
           <nav className="hidden lg:flex items-center space-x-6 font-mono text-xs font-bold uppercase tracking-wider">
             {navLinks.map((link) => {
               const sectionId = link.href.substring(1);
@@ -122,53 +114,47 @@ const Navbar = ({ onOpenRegister, onOpenScanner }) => {
             })}
           </nav>
 
-          {/* 3. RIGHT LOGO & CTA BUTTONS (Pops College Emblem on Right when scrolled) */}
-          <div className="hidden sm:flex items-center gap-3">
+          {/* 3. RIGHT SIDE: REGISTER CTA + ALWAYS-VISIBLE COLLEGE SEAL LOGO */}
+          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
             
-           
+            {/* Gate Scan Button (Desktop only) */}
+            {onOpenScanner && (
+              <button
+                onClick={onOpenScanner}
+                className="hidden xl:flex rounded-full px-3.5 py-1.5 text-xs font-mono font-bold uppercase tracking-wider text-emerald-400 border border-emerald-500/40 bg-emerald-500/10 hover:bg-emerald-500 hover:text-white transition-all duration-300 items-center gap-1 shrink-0"
+                title="Gate Attendance Verification Scanner"
+              >
+                <span>Gate Scan</span>
+              </button>
+            )}
 
             {/* Register CTA Button */}
             <button
               onClick={onOpenRegister}
-              className="rounded-full px-5 py-2 text-xs font-mono font-bold uppercase tracking-wider text-white border border-electric-500/50 bg-navy-900/60 hover:bg-gradient-to-r hover:from-electric-500 hover:to-electric-cyan hover:border-transparent hover:scale-105 hover:shadow-lg hover:shadow-electric-500/40 transition-all duration-300 flex items-center gap-1.5 group shrink-0"
+              className="rounded-full px-3 py-1.5 sm:px-5 sm:py-2 text-[10px] sm:text-xs font-mono font-bold uppercase tracking-wider text-white border border-electric-500/50 bg-navy-900/60 hover:bg-gradient-to-r hover:from-electric-500 hover:to-electric-cyan hover:border-transparent hover:scale-105 hover:shadow-lg hover:shadow-electric-500/40 transition-all duration-300 flex items-center gap-1 group shrink-0"
             >
               <span>REGISTER</span>
-              <ChevronRight className="w-3.5 h-3.5 text-electric-cyan group-hover:text-white group-hover:translate-x-0.5 transition-transform duration-300" />
+              <ChevronRight className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-electric-cyan group-hover:text-white group-hover:translate-x-0.5 transition-transform duration-300" />
             </button>
 
-            {/* Pop-in Right College Seal Emblem (Visible in Scrolled Capsule State) */}
-            <div
-              className={`transition-all duration-500 ease-out transform ${
-                isScrolled
-                  ? 'opacity-100 scale-100 translate-x-0'
-                  : 'opacity-0 scale-75 translate-x-4 pointer-events-none hidden md:block'
-              }`}
-            >
+            {/* Always-visible Right College Seal Emblem */}
+            <div title="College Seal Emblem" className="shrink-0">
               <img
                 src="/logo-left.png"
                 alt="College Seal Logo"
-                className="w-10 h-10 sm:w-11 sm:h-11 rounded-full object-contain p-0.5 bg-navy-950 border-2 border-electric-cyan/60 shadow-lg shadow-electric-cyan/30 hover:scale-110 transition-transform"
-                title="College Seal Emblem"
+                className="w-8 h-8 sm:w-10 sm:h-10 rounded-full object-contain p-0.5 bg-navy-950 border-2 border-electric-cyan/60 shadow-md shadow-electric-cyan/20 hover:scale-105 transition-transform"
               />
             </div>
 
-          </div>
-
-          {/* 4. MOBILE HAMBURGER TOGGLE */}
-          <div className="flex lg:hidden items-center gap-2">
-            <button
-              onClick={onOpenRegister}
-              className="btn-electric text-white text-[11px] font-mono font-bold px-3 py-1 rounded-full uppercase"
-            >
-              REGISTER
-            </button>
+            {/* Mobile Hamburger Menu Icon */}
             <button
               onClick={() => setMobileMenuOpen(true)}
-              className="p-1.5 rounded-xl bg-navy-900 border border-electric-500/30 text-slate-200 hover:text-white"
+              className="lg:hidden p-1.5 sm:p-2 rounded-xl bg-navy-900 border border-electric-500/30 text-slate-200 hover:text-white shrink-0"
               aria-label="Open Navigation Menu"
             >
-              <Menu className="w-5 h-5 text-electric-cyan" />
+              <Menu className="w-4 h-4 sm:w-5 sm:h-5 text-electric-cyan" />
             </button>
+
           </div>
 
         </div>
