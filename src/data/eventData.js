@@ -420,7 +420,7 @@ export const FAQS = [
   },
   {
     q: "How do I register for events?",
-    a: "Click the 'REGISTER' button on any competition card to fill out the form and instantly generate your digital event entry pass."
+    a: "Click the 'REGISTER' button and fill the form."
   }
 ];
 
