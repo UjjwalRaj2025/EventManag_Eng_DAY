@@ -122,8 +122,8 @@ const Navbar = ({ onOpenRegister }) => {
               <ChevronRight className="w-3.5 h-3.5 sm:w-4.5 sm:h-4.5 text-electric-cyan group-hover:text-white group-hover:translate-x-0.5 transition-transform duration-300" />
             </button>
 
-            {/* Right College Seal Emblem - Scaled +10% */}
-            <div title="College Seal Emblem" className="shrink-0">
+            {/* Right College Seal Emblem - Hidden on mobile phone, visible on tablet & desktop */}
+            <div title="College Seal Emblem" className="shrink-0 hidden sm:block">
               <img
                 src="/logo-left.png"
                 alt="College Seal Logo"
