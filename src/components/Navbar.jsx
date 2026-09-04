@@ -43,38 +43,39 @@ const Navbar = ({ onOpenRegister }) => {
   return (
     <>
       {/* 
-        +20% Phone Scaled Floating Glass Pill Navbar
-        - Perfectly aligned dual side logos, title vertical box, and CTA button inside capsule
+        +10% Scaled Up Floating Glass Pill Navbar
+        - Optimized top margin offset (mt-3.5 sm:mt-5)
+        - Clean reduced glow vector emblem & perfectly aligned dual side logos
       */}
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${
           isScrolled
-            ? 'mt-2.5 sm:mt-4 w-[98%] sm:w-[94%] lg:w-[88%] max-w-[1480px] mx-auto rounded-full bg-navy-950/90 backdrop-blur-2xl shadow-2xl shadow-navy-950/90 py-3 px-3.5 sm:px-8'
-            : 'w-full py-4.5 sm:py-7 px-4 sm:px-10 max-w-[1540px] mx-auto bg-transparent'
+            ? 'mt-3.5 sm:mt-5 w-[98%] sm:w-[94%] lg:w-[88%] max-w-[1500px] mx-auto rounded-full bg-navy-950/90 backdrop-blur-2xl shadow-2xl shadow-navy-950/90 py-3.5 sm:py-4 px-4 sm:px-9'
+            : 'w-full py-5 sm:py-8 px-4 sm:px-10 max-w-[1560px] mx-auto bg-transparent'
         }`}
       >
-        <div className="flex items-center justify-between gap-2 sm:gap-4 overflow-hidden">
+        <div className="flex items-center justify-between gap-2.5 sm:gap-4 overflow-hidden">
           
           {/* 1. LEFT SIDE: PATRON LOGO + VERTICAL BOX BRAND TITLE */}
-          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+          <div className="flex items-center gap-2.5 sm:gap-3.5 shrink-0">
             
-            {/* Left Patron Logo (Swamiji Portrait) - Scaled +20% on Phone */}
+            {/* Left Patron Logo (Swamiji Portrait) - Scaled +10% */}
             <a href="#home" title="Patron / Founder" className="shrink-0">
               <img
                 src="/LogoLatest.webp"
                 alt="Patron Logo"
-                className="w-10 h-10 sm:w-12 md:w-14 sm:h-12 md:h-14 rounded-full object-cover border-2 border-amber-500/60 shadow-md shadow-amber-500/30 hover:scale-105 transition-transform"
+                className="w-11 h-11 sm:w-13 md:w-15 sm:h-13 md:h-15 rounded-full object-cover border-2 border-amber-500/60 shadow-md shadow-amber-500/30 hover:scale-105 transition-transform"
               />
             </a>
 
             {/* Main Brand Vector Logo & Vertical Box Title */}
-            <a href="#home" className="flex items-center gap-1.5 sm:gap-2.5 group shrink-0">
-              <EngineeringLogo className="w-9 h-9 sm:w-10 md:w-12 sm:h-10 md:h-12 shrink-0" />
+            <a href="#home" className="flex items-center gap-2 sm:gap-3 group shrink-0">
+              <EngineeringLogo className="w-10 h-10 sm:w-11 md:w-13 sm:h-11 md:h-13 shrink-0" />
               <div className="flex flex-col justify-center leading-none font-mono select-none">
                 <div className="font-extrabold tracking-wider text-xs sm:text-base md:text-lg text-white flex items-center gap-0.5">
                   ENG<span className="text-electric-cyan">DAY</span>
                 </div>
-                <div className="mt-0.5 inline-block text-[9px] sm:text-[10px] font-bold text-electric-cyan/90 bg-electric-500/20 border border-electric-500/40 px-1 py-0.2 rounded tracking-widest text-center">
+                <div className="mt-0.5 inline-block text-[9px] sm:text-[10.5px] font-bold text-electric-cyan/90 bg-electric-500/20 border border-electric-500/40 px-1 py-0.2 rounded tracking-widest text-center">
                   2026
                 </div>
               </div>
@@ -110,33 +111,33 @@ const Navbar = ({ onOpenRegister }) => {
           </nav>
 
           {/* 3. RIGHT SIDE: REGISTER CTA + COLLEGE SEAL LOGO */}
-          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+          <div className="flex items-center gap-2.5 sm:gap-3.5 shrink-0">
 
-            {/* Register CTA Button - Scaled +20% on Phone */}
+            {/* Register CTA Button - Scaled +10% */}
             <button
               onClick={onOpenRegister}
-              className="rounded-full px-3.5 py-2 sm:px-6 sm:py-3 text-xs sm:text-xs md:text-sm font-mono font-bold uppercase tracking-wider text-white border border-electric-500/50 bg-navy-900/60 hover:bg-gradient-to-r hover:from-electric-500 hover:to-electric-cyan hover:border-transparent hover:scale-105 hover:shadow-lg hover:shadow-electric-500/40 transition-all duration-300 flex items-center gap-1 sm:gap-1.5 group shrink-0"
+              className="rounded-full px-4 py-2.5 sm:px-7 sm:py-3.5 text-xs sm:text-sm font-mono font-bold uppercase tracking-wider text-white border border-electric-500/50 bg-navy-900/60 hover:bg-gradient-to-r hover:from-electric-500 hover:to-electric-cyan hover:border-transparent hover:scale-105 hover:shadow-lg hover:shadow-electric-500/40 transition-all duration-300 flex items-center gap-1.5 sm:gap-2 group shrink-0"
             >
               <span>REGISTER</span>
-              <ChevronRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-electric-cyan group-hover:text-white group-hover:translate-x-0.5 transition-transform duration-300" />
+              <ChevronRight className="w-3.5 h-3.5 sm:w-4.5 sm:h-4.5 text-electric-cyan group-hover:text-white group-hover:translate-x-0.5 transition-transform duration-300" />
             </button>
 
-            {/* Right College Seal Emblem - Scaled +20% on Phone */}
+            {/* Right College Seal Emblem - Scaled +10% */}
             <div title="College Seal Emblem" className="shrink-0">
               <img
                 src="/logo-left.png"
                 alt="College Seal Logo"
-                className="w-10 h-10 sm:w-12 md:w-14 sm:h-12 md:h-14 rounded-full object-contain p-0.5 bg-navy-950 border-2 border-electric-cyan/60 shadow-md shadow-electric-cyan/30 hover:scale-105 transition-transform"
+                className="w-11 h-11 sm:w-13 md:w-15 sm:h-13 md:h-15 rounded-full object-contain p-0.5 bg-navy-950 border-2 border-electric-cyan/60 shadow-md shadow-electric-cyan/30 hover:scale-105 transition-transform"
               />
             </div>
 
             {/* Mobile Hamburger Menu Icon */}
             <button
               onClick={() => setMobileMenuOpen(true)}
-              className="lg:hidden p-2 sm:p-3 rounded-xl bg-navy-900 border border-electric-500/30 text-slate-200 hover:text-white shrink-0"
+              className="lg:hidden p-2.5 sm:p-3.5 rounded-xl bg-navy-900 border border-electric-500/30 text-slate-200 hover:text-white shrink-0"
               aria-label="Open Navigation Menu"
             >
-              <Menu className="w-4 h-4 sm:w-6 sm:h-6 text-electric-cyan" />
+              <Menu className="w-4.5 h-4.5 sm:w-6 sm:h-6 text-electric-cyan" />
             </button>
 
           </div>
