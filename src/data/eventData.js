@@ -458,30 +458,30 @@ export const CONTACT_INFO = {
   email: "engineeringday2026@college.edu",
   facultyCoordinators: [
     {
-      name: "Dr. M. K. Sharma",
+      name: "Dr. Nishant Munjal ",
       role: "Faculty Convener & HOD",
-      department: "School of Engineering & Technology",
-      email: "faculty.convener@college.edu"
+      department: "Computer Science & Engineering",
+      email: "nishant@gkv.ac.in"
     },
     {
-      name: "Prof. Rajesh Kumar",
+      name: "Dr. Sanjeev Lambha",
       role: "Faculty Co-Coordinator",
-      department: "Department of Electrical & Electronics",
-      email: "rajesh.kumar@college.edu"
+      department: "Mechanical Engineering",
+      email: "sanjeev.lambha@gkv.ac.in"
     }
   ],
   eventLeads: [
     {
-      name: "Aarav Verma",
+      name: "Not decided Yet",
       role: "Overall Student Convener",
-      phone: "+91 91234 56789",
-      email: "aarav.lead@student.edu"
+      phone: "+91 99999999999999",
+     
     },
     {
-      name: "Priya Deshmukh",
+      name: "Not decided Yet",
       role: "Technical Operations Lead",
-      phone: "+91 91234 56790",
-      email: "priya.tech@student.edu"
+      phone: "+91 999999999999999",
+      
     }
   ],
   socials: {
