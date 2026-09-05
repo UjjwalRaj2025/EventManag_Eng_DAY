@@ -49,13 +49,23 @@ const Hero = ({ onOpenRegister, onExploreEvents }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
         
 
-        {/* Main Title */}
-        <h1 className="text-2xl sm:text-5xl md:text-2xl lg:text-6xl font-black text-white tracking-tight uppercase leading-none font-sans mb-3">
-          Faculty of <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-500 via-electric-300 to-electric-cyan text-glow"> Engineering</span> & Technology<span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-500 via-electric-300 to-electric-cyan text-glow">- GK (DU)</span>
-        </h1>
-        <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white tracking-tight uppercase leading-none font-sans mb-4">
-          Engineer's <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-500 via-electric-300 to-electric-cyan text-glow">DAY 2026</span>
-        </h1>
+        {/* Main Title (3 Lines with Smooth Glowing Blue Word Highlights) */}
+        <div className="mb-6 space-y-2 sm:space-y-3">
+          {/* Line 1: Faculty of Engineering & Technology */}
+          <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white tracking-tight uppercase leading-tight font-sans transition-all duration-700 hover:scale-[1.01]">
+            Faculty of <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-500 via-electric-300 to-electric-cyan text-glow">Engineering & Technology</span>
+          </h1>
+
+          {/* Line 2: Gurukul Kangri Deemed to be University */}
+          <h2 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-white tracking-tight uppercase leading-tight font-sans transition-all duration-700 hover:scale-[1.01]">
+            Gurukul Kangri <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-500 via-electric-300 to-electric-cyan text-glow">(Deemed to be University)</span>
+          </h2>
+
+          {/* Line 3: Engineer's DAY 2026 */}
+          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white tracking-tight uppercase leading-none font-sans pt-1 transition-all duration-700 hover:scale-[1.01]">
+            Engineer's <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-500 via-electric-300 to-electric-cyan text-glow">DAY 2026</span>
+          </h1>
+        </div>
 
         {/* Theme Tagline */}
         <h2 className="text-xl sm:text-3xl font-extrabold text-electric-cyan tracking-wide uppercase font-mono mb-3">
