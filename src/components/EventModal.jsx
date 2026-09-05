@@ -5,10 +5,10 @@ const EventModal = ({ event, onClose, onRegister }) => {
   if (!event) return null;
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center p-3 sm:p-6 overflow-y-auto bg-navy-950/90 backdrop-blur-md animate-in fade-in duration-200">
+    <div className="fixed inset-0 z-[100] flex items-start justify-center pt-24 sm:pt-28 pb-6 px-3 sm:px-6 overflow-y-auto bg-navy-950/90 backdrop-blur-md animate-in fade-in duration-200">
       
-      {/* Modal Dialog Container */}
-      <div className="relative w-full max-w-4xl bg-navy-900 border border-electric-500/40 rounded-2xl shadow-2xl shadow-navy-950 overflow-hidden my-auto max-h-[86vh] flex flex-col">
+      {/* Modal Dialog Container - Shifted down below navbar */}
+      <div className="relative w-full max-w-4xl bg-navy-900 border border-electric-500/40 rounded-2xl shadow-2xl shadow-navy-950 overflow-hidden max-h-[78vh] sm:max-h-[82vh] flex flex-col">
         
         {/* Header Bar */}
         <div className="sticky top-0 bg-navy-950/95 border-b border-electric-500/30 px-6 py-4 flex items-center justify-between z-10">
