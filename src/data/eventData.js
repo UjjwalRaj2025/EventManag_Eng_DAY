@@ -459,13 +459,13 @@ export const CONTACT_INFO = {
   facultyCoordinators: [
     {
       name: "Dr. Nishant Munjal ",
-      role: "Faculty Convener & HOD",
+      // role: "Faculty Convener & HOD",
       department: "Computer Science & Engineering",
       email: "nishant@gkv.ac.in"
     },
     {
       name: "Dr. Sanjeev Lambha",
-      role: "Faculty Co-Coordinator",
+      // role: "Faculty Co-Coordinator",
       department: "Mechanical Engineering",
       email: "sanjeev.lambha@gkv.ac.in"
     }
