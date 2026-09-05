@@ -404,7 +404,7 @@ export const GALLERY_IMAGES = [
 export const FAQS = [
   {
     q: "Who can participate in Engineering Day 2026?",
-    a: "Open to all engineering, polytechnic, B.Tech, diploma, and computer application students from any college or institute."
+    a: "Eligible candidates are students from all courses of GKV (Gurukul Kangri Deemed to be University). Participation is strictly for GKV students and NOT open to outsiders."
   },
   {
     q: "What is the registration fee?",
