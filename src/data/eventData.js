@@ -141,7 +141,7 @@ export const COMPETITIONS = [
     icon: "Code",
     coordinator: {
       name: "Mohit Kumar",
-      department: "Information Technology",
+      department: "Computer Science & Engineering",
       phone: "+91 76679 89449"
     },
     shortDesc: "Hunt down bugs, fix syntax/logic flaws, and optimize broken code snippets under intense time constraints.",
