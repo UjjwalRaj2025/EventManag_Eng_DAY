@@ -115,22 +115,7 @@ const EventModal = ({ event, onClose, onRegister }) => {
             </div>
           )}
 
-          {/* Judging Criteria */}
-          {event.judgingCriteria && (
-            <div>
-              <h4 className="text-xs font-mono text-electric-cyan uppercase tracking-wider mb-3 flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-emerald-400" />
-                Judging Criteria & Weightage
-              </h4>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                {event.judgingCriteria.map((criterion, idx) => (
-                  <div key={idx} className="px-3 py-2 rounded-lg bg-navy-950/80 border border-electric-500/20 text-xs text-slate-200">
-                    {criterion}
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
+
 
           {/* Important Instructions */}
           {event.instructions && (
