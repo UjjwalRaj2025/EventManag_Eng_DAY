@@ -6,9 +6,9 @@ const RegistrationModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-navy-950/85 backdrop-blur-md animate-in fade-in duration-200">
+    <div className="fixed inset-0 z-[100] flex items-center justify-center p-3 sm:p-6 bg-navy-950/90 backdrop-blur-md animate-in fade-in duration-200">
       
-      <div className="relative w-full max-w-4xl bg-navy-900 border border-electric-500/40 rounded-2xl shadow-2xl overflow-hidden my-4 max-h-[94vh] flex flex-col">
+      <div className="relative w-full max-w-4xl bg-navy-900 border border-electric-500/40 rounded-2xl shadow-2xl overflow-hidden my-auto max-h-[86vh] flex flex-col">
         
         {/* Modal Header */}
         <div className="bg-navy-950 px-5 py-4 border-b border-electric-500/30 flex items-center justify-between">
