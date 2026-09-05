@@ -50,7 +50,7 @@ export const COMPETITIONS = [
       "Personal Laptop & Charger",
       "Pre-configured development environment / API credentials"
     ],
-    instructions: "Check-in at the Computer Lab Complex at 10:00 AM. High-speed Wi-Fi provided."
+    instructions: "Venue not decided yet."
   },
   {
     id: "project-exhibition",
@@ -82,7 +82,7 @@ export const COMPETITIONS = [
       "Project Poster / Specs Sheet",
       "Extension board (if power needed)"
     ],
-    instructions: "Booths will be assigned at Central Exhibition Hall by 09:30 AM."
+    instructions: "Venue not decided yet."
   },
   {
     id: "poster-presentation",
@@ -113,7 +113,7 @@ export const COMPETITIONS = [
       "Printed Technical Poster (A1 / 3ft x 2ft)",
       "Push pins or mounting tape"
     ],
-    instructions: "Mount posters at Seminar Hall 1 by 11:00 AM."
+    instructions: "Venue not decided yet."
   },
   {
     id: "debugging",
@@ -143,7 +143,7 @@ export const COMPETITIONS = [
       "Computers provided in CS Lab",
       "Pen & scratch paper"
     ],
-    instructions: "Report to Computer Lab 2 at 02:00 PM."
+    instructions: "Venue not decided yet."
   },
   {
     id: "quiz-competition",
@@ -171,7 +171,7 @@ export const COMPETITIONS = [
     requiredMaterials: [
       "Pen & scratch paper provided"
     ],
-    instructions: "Assembling at Main Lecture Hall at 03:30 PM."
+    instructions: "Venue not decided yet."
   }
 ];
 
