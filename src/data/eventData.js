@@ -38,7 +38,7 @@ export const COMPETITIONS = [
     shortDesc: "Build cutting-edge AI prompts, agents, and generative solutions using OpenAI APIs, LLMs, and prompt engineering.",
     overview: "The OpenAI Challenge tests your ability to leverage modern generative AI, Large Language Models (LLMs), and prompt engineering to build intelligent agents and automated solutions for real-world problems.",
     problemStatement: "Architect and deploy an AI solution using OpenAI APIs or LLM frameworks to automate a complex task, analyze data, or generate interactive user experiences under time constraints.",
-    eligibility: "Open to all undergraduate & diploma engineering students.",
+    eligibility: "Open to all undergraduate & diploma engineering students(B.Tech/BCA/M.Tech/MCA, etc).",
     rules: [
       "Participation can be individual or in a group.",
       "OpenAI API keys / LLM playground tools are permitted.",
@@ -74,7 +74,7 @@ export const COMPETITIONS = [
     shortDesc: "Showcase working engineering prototypes, hardware models, IoT devices, and innovative software solutions to jury & visitors.",
     overview: "The grand exhibition stage for student inventors. Exhibit your semester projects, hardware prototypes, IoT systems, civil structures, or software applications to expert faculty and visitors.",
     problemStatement: "Set up a working booth demonstrating your engineering project, explaining the problem statement, prototype architecture, circuit/software design, and real-world impact.",
-    eligibility: "Open to all engineering branches (CS, ECE, EEE, Civil, Mechanical).",
+    eligibility: "Student of any Course of GKV.",
     rules: [
       "Individual or team entries are permitted.",
       "Projects must have a functional physical prototype or live software demo.",
@@ -111,7 +111,7 @@ export const COMPETITIONS = [
     shortDesc: "Present technical paper concepts, architectural designs, sustainable engineering, and research findings through creative posters.",
     overview: "A platform for aspiring researchers and engineers to articulate innovative ideas, emerging technology trends, and sustainable engineering concepts using visual technical posters.",
     problemStatement: "Design and visually present a comprehensive technical poster on cutting-edge topics such as Renewable Energy, AI in Healthcare, Smart Infrastructure, or Quantum Computing.",
-    eligibility: "Open to all undergraduate & diploma engineering students.",
+    eligibility: "Student of any Course of GKV",
     rules: [
       "Individual or team participation.",
       "Standard poster dimensions: A1 size (or printed 3ft x 2ft banner).",
@@ -147,7 +147,7 @@ export const COMPETITIONS = [
     shortDesc: "Hunt down bugs, fix syntax/logic flaws, and optimize broken code snippets under intense time constraints.",
     overview: "Speed and precision meet code logic. Debugging challenges your ability to trace erroneous code, fix hidden memory/logic bugs, and optimize execution speed across C, C++, Python, or Java.",
     problemStatement: "Correct faulty code snippets containing logical bugs, runtime exceptions, and edge-case failures within the shortest time possible.",
-    eligibility: "Individual entry. Open to all students.",
+    eligibility: "Open to all undergraduate & diploma engineering students(B.Tech/BCA/M.Tech/MCA, etc)",
     rules: [
       "Strictly individual participation.",
       "No external internet searching or AI assistants allowed during test rounds.",
