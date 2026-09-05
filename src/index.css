@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    -webkit-overflow-scrolling: touch;
+  }
+
   html {
     scroll-behavior: smooth;
     font-family: 'Inter', sans-serif;
@@ -13,10 +17,17 @@
     @apply bg-navy-950 text-slate-100 antialiased overflow-x-hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    -webkit-overflow-scrolling: touch;
   }
 }
 
-/* Hide Scrollbar while keeping butter-smooth scrolling */
+/* Global iOS Momentum Inertia Smooth Scrolling */
+.overflow-y-auto, .overflow-x-auto, .overflow-auto, main, section {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+/* Hide Scrollbar while keeping iOS butter-smooth momentum scrolling */
 ::-webkit-scrollbar {
   display: none;
   width: 0;
