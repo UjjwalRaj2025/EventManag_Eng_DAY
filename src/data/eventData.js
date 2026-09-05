@@ -461,14 +461,12 @@ export const CONTACT_INFO = {
       name: "Dr. M. K. Sharma",
       role: "Faculty Convener & HOD",
       department: "School of Engineering & Technology",
-      phone: "+91 98765 43210",
       email: "faculty.convener@college.edu"
     },
     {
       name: "Prof. Rajesh Kumar",
       role: "Faculty Co-Coordinator",
       department: "Department of Electrical & Electronics",
-      phone: "+91 98765 43211",
       email: "rajesh.kumar@college.edu"
     }
   ],

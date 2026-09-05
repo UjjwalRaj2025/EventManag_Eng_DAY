@@ -57,24 +57,17 @@ const Contact = () => {
                   </p>
                 </div>
 
-                <div className="pt-4 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-3 text-xs font-mono">
-                  <a
-                    href={`tel:${faculty.phone.replace(/\s+/g, '')}`}
-                    className="flex items-center gap-2 text-slate-200 hover:text-electric-cyan transition-colors"
-                  >
-                    <Phone className="w-3.5 h-3.5 text-electric-cyan" />
-                    <span>{faculty.phone}</span>
-                  </a>
-                  {faculty.email && (
+                {faculty.email && (
+                  <div className="pt-4 border-t border-slate-800/80 flex items-center justify-start gap-3 text-xs font-mono">
                     <a
                       href={`mailto:${faculty.email}`}
-                      className="flex items-center gap-1.5 text-slate-400 hover:text-electric-cyan transition-colors"
+                      className="flex items-center gap-2 text-slate-300 hover:text-electric-cyan transition-colors"
                     >
-                      <Mail className="w-3.5 h-3.5" />
+                      <Mail className="w-3.5 h-3.5 text-electric-cyan" />
                       <span>{faculty.email}</span>
                     </a>
-                  )}
-                </div>
+                  </div>
+                )}
               </div>
             ))}
           </div>
