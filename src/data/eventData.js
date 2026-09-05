@@ -30,6 +30,11 @@ export const COMPETITIONS = [
     registrationFee: "Free",
     duration: "3 Hours",
     icon: "Sparkles",
+    coordinator: {
+      name: "Aarav Verma",
+      department: "Computer Science & Engineering",
+      phone: "+91 91234 56789"
+    },
     shortDesc: "Build cutting-edge AI prompts, agents, and generative solutions using OpenAI APIs, LLMs, and prompt engineering.",
     overview: "The OpenAI Challenge tests your ability to leverage modern generative AI, Large Language Models (LLMs), and prompt engineering to build intelligent agents and automated solutions for real-world problems.",
     problemStatement: "Architect and deploy an AI solution using OpenAI APIs or LLM frameworks to automate a complex task, analyze data, or generate interactive user experiences under time constraints.",
@@ -61,6 +66,11 @@ export const COMPETITIONS = [
     registrationFee: "Free",
     duration: "Full Day",
     icon: "Lightbulb",
+    coordinator: {
+      name: "Rohan Sharma",
+      department: "Electrical & Electronics Engineering",
+      phone: "+91 91234 56791"
+    },
     shortDesc: "Showcase working engineering prototypes, hardware models, IoT devices, and innovative software solutions to jury & visitors.",
     overview: "The grand exhibition stage for student inventors. Exhibit your semester projects, hardware prototypes, IoT systems, civil structures, or software applications to expert faculty and visitors.",
     problemStatement: "Set up a working booth demonstrating your engineering project, explaining the problem statement, prototype architecture, circuit/software design, and real-world impact.",
@@ -93,6 +103,11 @@ export const COMPETITIONS = [
     registrationFee: "Free",
     duration: "2 Hours",
     icon: "Compass",
+    coordinator: {
+      name: "Ananya Gupta",
+      department: "Civil Engineering",
+      phone: "+91 91234 56792"
+    },
     shortDesc: "Present technical paper concepts, architectural designs, sustainable engineering, and research findings through creative posters.",
     overview: "A platform for aspiring researchers and engineers to articulate innovative ideas, emerging technology trends, and sustainable engineering concepts using visual technical posters.",
     problemStatement: "Design and visually present a comprehensive technical poster on cutting-edge topics such as Renewable Energy, AI in Healthcare, Smart Infrastructure, or Quantum Computing.",
@@ -124,6 +139,11 @@ export const COMPETITIONS = [
     registrationFee: "Free",
     duration: "1.5 Hours",
     icon: "Code",
+    coordinator: {
+      name: "Vikas Patel",
+      department: "Information Technology",
+      phone: "+91 91234 56793"
+    },
     shortDesc: "Hunt down bugs, fix syntax/logic flaws, and optimize broken code snippets under intense time constraints.",
     overview: "Speed and precision meet code logic. Debugging challenges your ability to trace erroneous code, fix hidden memory/logic bugs, and optimize execution speed across C, C++, Python, or Java.",
     problemStatement: "Correct faulty code snippets containing logical bugs, runtime exceptions, and edge-case failures within the shortest time possible.",
@@ -154,6 +174,11 @@ export const COMPETITIONS = [
     registrationFee: "Free",
     duration: "1 Hour",
     icon: "HelpCircle",
+    coordinator: {
+      name: "Priya Deshmukh",
+      department: "Mechanical Engineering",
+      phone: "+91 91234 56794"
+    },
     shortDesc: "Test your computer science fundamentals, tech trivia, IT history, programming concepts, and engineering logic.",
     overview: "The ultimate battle of CS minds! Quiz Competition tests rapid recall of computer hardware, software engineering history, networking, algorithms, and tech industry trivia.",
     problemStatement: "Answer multiple-choice and buzzer questions covering programming fundamentals, IT trivia, cyber security, computer organization, and tech icons.",

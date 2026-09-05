@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, Users, Clock, ShieldAlert, CheckCircle, Cpu, ArrowRight, Zap, FileText, Wrench } from 'lucide-react';
+import { X, Users, Clock, ShieldAlert, CheckCircle, Cpu, ArrowRight, Zap, FileText, Wrench, UserCheck, Phone } from 'lucide-react';
 
 const EventModal = ({ event, onClose, onRegister }) => {
   if (!event) return null;
@@ -115,7 +115,28 @@ const EventModal = ({ event, onClose, onRegister }) => {
             </div>
           )}
 
-
+          {/* Student Coordinator Section */}
+          {event.coordinator && (
+            <div className="p-4 rounded-xl bg-navy-950/80 border border-emerald-500/30">
+              <h5 className="text-xs font-mono text-emerald-400 uppercase tracking-wider mb-2 font-semibold flex items-center gap-2">
+                <UserCheck className="w-4 h-4 text-emerald-400" />
+                Event Student Coordinator
+              </h5>
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <div>
+                  <p className="text-sm font-bold text-white">{event.coordinator.name}</p>
+                  <p className="text-xs text-slate-400 font-mono">{event.coordinator.department}</p>
+                </div>
+                <a
+                  href={`tel:${event.coordinator.phone.replace(/\s+/g, '')}`}
+                  className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-xs font-mono hover:bg-emerald-500/20 transition-colors w-fit"
+                >
+                  <Phone className="w-3.5 h-3.5" />
+                  <span>{event.coordinator.phone}</span>
+                </a>
+              </div>
+            </div>
+          )}
 
           {/* Important Instructions */}
           {event.instructions && (

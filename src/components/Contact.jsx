@@ -1,6 +1,6 @@
 import React from 'react';
-import { UserCheck, GraduationCap, Phone, Mail, MapPin, Building, Sparkles } from 'lucide-react';
-import { CONTACT_INFO } from '../data/eventData';
+import { UserCheck, GraduationCap, Phone, Mail, MapPin, Building, Sparkles, Trophy } from 'lucide-react';
+import { CONTACT_INFO, COMPETITIONS } from '../data/eventData';
 
 const Contact = () => {
   return (
@@ -21,16 +21,55 @@ const Contact = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-electric-500 to-electric-cyan mx-auto mt-4 rounded-full" />
           <p className="mt-4 text-slate-300 text-sm sm:text-base">
-            Have questions regarding competition rules, registration, or logistics? Reach out to our faculty conveners and student event leads.
+            Have questions regarding competition rules, registration, or logistics? Reach out to our faculty conveners, overall student leads, or event-specific coordinators.
           </p>
         </div>
 
-        {/* 2. EVENT STUDENT LEADS */}
-        <div>
+        {/* 1. INDIVIDUAL EVENT STUDENT COORDINATORS */}
+        <div className="mb-14">
+          <div className="flex items-center gap-2 mb-6 border-b border-electric-500/20 pb-3">
+            <Trophy className="w-5 h-5 text-electric-cyan" />
+            <h3 className="text-xl font-bold text-white font-mono uppercase tracking-wider">
+              Individual Event Student Coordinators
+            </h3>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {COMPETITIONS.map((comp) => (
+              <div
+                key={comp.id}
+                className="glass-panel p-5 rounded-2xl border-electric-500/20 glass-panel-hover flex flex-col justify-between"
+              >
+                <div>
+                  <span className="px-2.5 py-1 rounded bg-electric-500/15 text-electric-cyan text-[11px] font-mono font-bold uppercase tracking-wide border border-electric-500/30 inline-block mb-3">
+                    {comp.name}
+                  </span>
+                  <h4 className="text-lg font-bold text-white font-sans">{comp.coordinator.name}</h4>
+                  <p className="text-xs font-mono text-emerald-400 font-semibold mt-1">
+                    {comp.coordinator.department}
+                  </p>
+                </div>
+
+                <div className="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs font-mono">
+                  <a
+                    href={`tel:${comp.coordinator.phone.replace(/\s+/g, '')}`}
+                    className="flex items-center gap-2 text-slate-200 hover:text-electric-cyan transition-colors"
+                  >
+                    <Phone className="w-3.5 h-3.5 text-electric-cyan" />
+                    <span>{comp.coordinator.phone}</span>
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* 2. OVERALL STUDENT LEADS */}
+        <div className="mb-14">
           <div className="flex items-center gap-2 mb-6 border-b border-electric-500/20 pb-3">
             <UserCheck className="w-5 h-5 text-emerald-400" />
             <h3 className="text-xl font-bold text-white font-mono uppercase tracking-wider">
-              Student Event Leads
+              Overall Student Leads
             </h3>
           </div>
 
@@ -60,18 +99,14 @@ const Contact = () => {
                     <Phone className="w-3.5 h-3.5 text-electric-cyan" />
                     <span>{lead.phone}</span>
                   </a>
-
-                  
                 </div>
               </div>
             ))}
           </div>
         </div>
-        <br></br>
-        <br></br>
         
-        {/* 1. FACULTY COORDINATORS */}
-        <div className="mb-14">
+        {/* 3. FACULTY COORDINATORS */}
+        <div>
           <div className="flex items-center gap-2 mb-6 border-b border-electric-500/20 pb-3">
             <GraduationCap className="w-5 h-5 text-electric-cyan" />
             <h3 className="text-xl font-bold text-white font-mono uppercase tracking-wider">
@@ -110,14 +145,11 @@ const Contact = () => {
                     <Phone className="w-3.5 h-3.5 text-electric-cyan" />
                     <span>{faculty.phone}</span>
                   </a>
-
-                  
                 </div>
               </div>
             ))}
           </div>
         </div>
-
 
       </div>
     </section>
