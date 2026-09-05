@@ -38,7 +38,7 @@ export const COMPETITIONS = [
     shortDesc: "Build cutting-edge AI prompts, agents, and generative solutions using OpenAI APIs, LLMs, and prompt engineering.",
     overview: "The OpenAI Challenge tests your ability to leverage modern generative AI, Large Language Models (LLMs), and prompt engineering to build intelligent agents and automated solutions for real-world problems.",
     problemStatement: "Architect and deploy an AI solution using OpenAI APIs or LLM frameworks to automate a complex task, analyze data, or generate interactive user experiences under time constraints.",
-    eligibility: "Open to all undergraduate & diploma engineering students(B.Tech/BCA/M.Tech/MCA, etc).",
+    eligibility: "Open to all GKV students from 1st Year to Final Year across all courses/branches, as well as Research Scholars (Ph.D. / M.Phil).",
     rules: [
       "Participation can be individual or in a group.",
       "OpenAI API keys / LLM playground tools are permitted.",
@@ -285,7 +285,7 @@ export const COMPETITIONS = [
         ]
       }
     ],
-    eligibility: "Student of any Course of GKV.",
+    eligibility: "Open to all GKV students from 1st Year to Final Year across all courses/branches, as well as Research Scholars (Ph.D. / M.Phil).",
     rules: [
       "Individual or team entries are permitted.",
       "Projects must have a functional physical prototype or live software demo.",
@@ -539,7 +539,7 @@ export const COMPETITIONS = [
         ]
       }
     ],
-    eligibility: "Student of any Course of GKV.",
+    eligibility: "Open to all GKV students from 1st Year to Final Year across all courses/branches, as well as Research Scholars (Ph.D. / M.Phil).",
     rules: [
       "Individual or team participation.",
       "Standard poster dimensions: A1 size (or printed 3ft x 2ft banner).",
@@ -575,7 +575,7 @@ export const COMPETITIONS = [
     shortDesc: "Hunt down bugs, fix syntax/logic flaws, and optimize broken code snippets under intense time constraints.",
     overview: "Speed and precision meet code logic. Debugging challenges your ability to trace erroneous code, fix hidden memory/logic bugs, and optimize execution speed across C, C++, Python, or Java.",
     problemStatement: "Correct faulty code snippets containing logical bugs, runtime exceptions, and edge-case failures within the shortest time possible.",
-    eligibility: "Open to all undergraduate & diploma engineering students(B.Tech/BCA/M.Tech/MCA, etc)",
+    eligibility: "Open to all GKV students from 1st Year to Final Year across all courses/branches, as well as Research Scholars (Ph.D. / M.Phil).",
     rules: [
       "Strictly individual participation.",
       "No external internet searching or AI assistants allowed during test rounds.",
@@ -610,7 +610,7 @@ export const COMPETITIONS = [
     shortDesc: "Test your computer science fundamentals, tech trivia, IT history, programming concepts, and engineering logic.",
     overview: "The ultimate battle of CS minds! Quiz Competition tests rapid recall of computer hardware, software engineering history, networking, algorithms, and tech industry trivia.",
     problemStatement: "Answer multiple-choice and buzzer questions covering programming fundamentals, IT trivia, cyber security, computer organization, and tech icons.",
-    eligibility: "Strictly individual participation.",
+    eligibility: "Open to all GKV students from 1st Year to Final Year across all courses/branches, as well as Research Scholars (Ph.D. / M.Phil).",
     rules: [
       "Individual entry.",
       "Round 1: Written Multiple-Choice Screening (20 mins).",

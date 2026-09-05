@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, ExternalLink, FileText, ShieldAlert } from 'lucide-react';
+import { X, ExternalLink, FileText, ShieldAlert, GraduationCap } from 'lucide-react';
 import { EVENT_INFO } from '../data/eventData';
 
 const RegistrationModal = ({ isOpen, onClose, defaultEvent }) => {
@@ -49,14 +49,20 @@ const RegistrationModal = ({ isOpen, onClose, defaultEvent }) => {
         {/* Modal Body - Dedicated Google Form */}
         <div className="p-4 sm:p-6 overflow-y-auto flex-1 space-y-4">
           
-          {/* Check Event Details Reminder Banner */}
+          {/* Check Event Details & Eligibility Reminder Banner */}
           <div className="p-4 rounded-xl bg-gradient-to-r from-amber-500/20 via-amber-500/10 to-electric-500/10 border border-amber-500/40 text-amber-100 text-xs font-mono flex items-start gap-3 shadow-lg">
             <ShieldAlert className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
-            <div className="leading-relaxed">
-              <span className="font-bold uppercase text-amber-300 block mb-0.5">
+            <div className="leading-relaxed space-y-1.5">
+              <span className="font-bold uppercase text-amber-300 block">
                 {defaultEvent ? `REGISTERING FOR: ${defaultEvent.toUpperCase()}` : 'IMPORTANT REGISTRATION NOTICE'}
               </span>
-              Please make sure to check and review the complete rules, eligibility criteria, required tools, and details of this event before completing your registration!
+              <p className="text-slate-200">
+                Please make sure to check and review the complete rules, eligibility criteria, required tools, and details of this event before completing your registration!
+              </p>
+              <div className="pt-2 border-t border-amber-500/30 text-emerald-400 font-bold flex items-center gap-1.5">
+                <GraduationCap className="w-4 h-4 text-emerald-400 shrink-0" />
+                <span>Eligibility: Open to all GKV Students (1st Year to Final Year, all courses) & Research Scholars (Ph.D. / M.Phil)!</span>
+              </div>
             </div>
           </div>
 

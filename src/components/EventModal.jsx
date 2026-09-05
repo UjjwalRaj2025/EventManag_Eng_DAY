@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Users, Clock, ShieldAlert, CheckCircle, Cpu, ArrowRight, Zap, FileText, Wrench, UserCheck, Phone, BookOpen, ChevronDown } from 'lucide-react';
+import { X, Users, Clock, ShieldAlert, CheckCircle, Cpu, ArrowRight, Zap, FileText, Wrench, UserCheck, Phone, BookOpen, ChevronDown, GraduationCap } from 'lucide-react';
 
 const DepartmentTopicsViewer = ({ departmentTopics }) => {
   const [selectedDept, setSelectedDept] = useState('');
@@ -171,12 +171,18 @@ const EventModal = ({ event, onClose, onRegister }) => {
           {/* Eligibility & Materials Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             
-            <div className="p-4 rounded-xl bg-navy-950/60 border border-slate-800">
-              <h5 className="text-xs font-mono text-slate-300 uppercase tracking-wider mb-2 font-semibold flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-emerald-400" />
-                Eligibility Criteria
-              </h5>
-              <p className="text-xs text-slate-300">{event.eligibility}</p>
+            <div className="p-4 rounded-xl bg-navy-950/60 border border-slate-800 flex flex-col justify-between">
+              <div>
+                <h5 className="text-xs font-mono text-slate-300 uppercase tracking-wider mb-2 font-semibold flex items-center gap-2">
+                  <CheckCircle className="w-4 h-4 text-emerald-400" />
+                  Eligibility Criteria
+                </h5>
+                <p className="text-xs text-slate-300 leading-relaxed font-mono">{event.eligibility}</p>
+              </div>
+              <div className="mt-3 pt-2.5 border-t border-slate-800/80 text-[11px] font-mono text-emerald-400 font-semibold flex items-center gap-1.5">
+                <GraduationCap className="w-4 h-4 text-emerald-400 shrink-0" />
+                <span>1st Year to Final Year & Research Scholars Eligible</span>
+              </div>
             </div>
 
             <div className="p-4 rounded-xl bg-navy-950/60 border border-slate-800">
