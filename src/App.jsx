@@ -46,7 +46,7 @@ function App() {
 
         <Events onRegister={(eventName) => handleOpenRegister(eventName)} />
 
-        {/* <Contact /> */}
+        <Contact />
 
         <FAQ />
       </main>
