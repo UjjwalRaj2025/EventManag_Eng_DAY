@@ -1,8 +1,8 @@
 import React from 'react';
-import { X, ExternalLink, FileText } from 'lucide-react';
+import { X, ExternalLink, FileText, ShieldAlert } from 'lucide-react';
 import { EVENT_INFO } from '../data/eventData';
 
-const RegistrationModal = ({ isOpen, onClose }) => {
+const RegistrationModal = ({ isOpen, onClose, defaultEvent }) => {
   if (!isOpen) return null;
 
   return (
@@ -20,7 +20,9 @@ const RegistrationModal = ({ isOpen, onClose }) => {
               <span className="text-[10px] font-mono text-electric-cyan uppercase tracking-widest block font-bold">
                 OFFICIAL REGISTRATION PORTAL
               </span>
-              <h3 className="text-lg sm:text-xl font-bold text-white font-sans">Register for Engineering Day 2026</h3>
+              <h3 className="text-lg sm:text-xl font-bold text-white font-sans">
+                Register for {defaultEvent || 'Engineering Day 2026'}
+              </h3>
             </div>
           </div>
 
@@ -47,6 +49,17 @@ const RegistrationModal = ({ isOpen, onClose }) => {
         {/* Modal Body - Dedicated Google Form */}
         <div className="p-4 sm:p-6 overflow-y-auto flex-1 space-y-4">
           
+          {/* Check Event Details Reminder Banner */}
+          <div className="p-4 rounded-xl bg-gradient-to-r from-amber-500/20 via-amber-500/10 to-electric-500/10 border border-amber-500/40 text-amber-100 text-xs font-mono flex items-start gap-3 shadow-lg">
+            <ShieldAlert className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
+            <div className="leading-relaxed">
+              <span className="font-bold uppercase text-amber-300 block mb-0.5">
+                {defaultEvent ? `REGISTERING FOR: ${defaultEvent.toUpperCase()}` : 'IMPORTANT REGISTRATION NOTICE'}
+              </span>
+              Please make sure to check and review the complete rules, eligibility criteria, required tools, and details of this event before completing your registration!
+            </div>
+          </div>
+
           <div className="p-3.5 rounded-xl bg-electric-500/10 border border-electric-500/30 flex items-center justify-between gap-3 font-mono text-xs">
             <p className="text-slate-300">
               💡 Complete the official registration form below. All responses are saved directly into our registration database.

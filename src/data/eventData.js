@@ -72,8 +72,219 @@ export const COMPETITIONS = [
       phone: "+91 81028 38007"
     },
     shortDesc: "Showcase working engineering prototypes, hardware models, IoT devices, and innovative software solutions to jury & visitors.",
-    overview: "The grand exhibition stage for student inventors. Exhibit your semester projects, hardware prototypes, IoT systems, civil structures, or software applications to expert faculty and visitors.",
-    problemStatement: "Set up a working booth demonstrating your engineering project, explaining the problem statement, prototype architecture, circuit/software design, and real-world impact.",
+    problemStatement: "Set up a working booth demonstrating your engineering project, explaining the problem statement, prototype architecture, circuit/software design, and real-world impact. Explore proposed topics department-wise below or propose your own innovative topic.",
+    departmentTopics: [
+      {
+        department: "Mechanical Engineering",
+        topics: [
+          "Hydraulic Robotic Arm",
+          "Mini Conveyor Belt",
+          "Scissor Lift Working Model",
+          "Automatic Waste-Sorting Mechanism",
+          "Solar-Powered Mechanical System",
+          "Wind Energy Working Model",
+          "Gear Train & Power Transmission Model",
+          "CAD-Based Innovative Product",
+          "Four-Stroke Engine Working Model/Animation",
+          "Energy Generation from Mechanical Motion"
+        ]
+      },
+      {
+        department: "Computer Science & Engineering",
+        topics: [
+          "College Inquiry Chatbot",
+          "Student Attendance Management System",
+          "Online Quiz Application",
+          "Student Performance Dashboard",
+          "AI-Based Resume Screening",
+          "Career Guidance Chatbot",
+          "Simple Educational Website/App",
+          "Library Management System",
+          "Cybersecurity Awareness Application",
+          "AI Study Assistant for Students"
+        ]
+      },
+      {
+        department: "Electronics & Communication Engineering",
+        topics: [
+          "Automatic Street Light",
+          "Smart Traffic Light",
+          "Water Level Indicator",
+          "Fire & Smoke Detection System",
+          "Automatic Night Lamp",
+          "Smart Home Automation",
+          "IR Object Detection",
+          "Temperature Monitoring System",
+          "Smart Parking Prototype",
+          "Electronic Voting Machine Model"
+        ]
+      },
+      {
+        department: "Electrical Engineering",
+        topics: [
+          "Solar-Powered House",
+          "Automatic Street Light",
+          "Solar Mobile Charger",
+          "Mini Wind Energy Generator",
+          "Smart Energy Meter",
+          "Home Energy Consumption Calculator",
+          "Automatic Power Backup",
+          "Energy-Efficient Lighting",
+          "Solar-Wind Hybrid System",
+          "EV Charging Station Model"
+        ]
+      },
+      {
+        department: "Robotics & Automation",
+        topics: [
+          "Line Following Robot",
+          "Obstacle Avoiding Robot",
+          "Low-Cost Robotic Arm",
+          "Pick-and-Place Robot",
+          "Bluetooth-Controlled Robot",
+          "Robot Arm CAD Model",
+          "PLC Automation Simulation",
+          "Automatic Waste Segregation",
+          "Smart Factory Model",
+          "MATLAB/Python Robot Simulation"
+        ]
+      },
+      {
+        department: "Basic Science & Technology",
+        topics: [
+          "Low-Cost Water Purification Model",
+          "Rainwater Harvesting Model",
+          "Solar Energy Demonstration",
+          "Waste-to-Useful-Product Model",
+          "Natural Indicator from Plants",
+          "Soil Quality Testing Demonstration",
+          "Smart Plant Monitoring System",
+          "Food Adulteration Detection Demonstration",
+          "Low-Cost Scientific Experiment Kit",
+          "Environmental Pollution Monitoring Model"
+        ]
+      },
+      {
+        department: "Environmental Science",
+        topics: [
+          "Smart Waste Management",
+          "Rainwater Harvesting",
+          "Plastic Waste Conversion Concept",
+          "Air Quality Monitoring",
+          "Water Quality Monitoring",
+          "Composting Model",
+          "Smart Campus Environment Monitor",
+          "Solar-Based Environmental System",
+          "Biodiversity Garden Model",
+          "Sustainable Village Model"
+        ]
+      },
+      {
+        department: "Pharmacy",
+        topics: [
+          "Smart Medicine Reminder System",
+          "Digital Medicine Information System",
+          "Drug Storage Monitoring Concept",
+          "Pharmacist–Patient Information Kiosk",
+          "Herbal Product Information Model",
+          "Medication Schedule Planner",
+          "Pharmacy Inventory Management App",
+          "Drug Awareness Interactive Model",
+          "Healthcare Waste Management Model",
+          "AI-Assisted Drug Information Concept"
+        ]
+      },
+      {
+        department: "Management & Commerce",
+        topics: [
+          "Student Startup Business Model",
+          "Digital Marketing Campaign",
+          "E-Commerce Business Model",
+          "Campus Startup Idea",
+          "Business Dashboard using Excel",
+          "Customer Feedback Analysis",
+          "Small Business Financial Model",
+          "Social Media Marketing Strategy",
+          "Entrepreneurship Idea Pitch",
+          "Sustainable Business Model"
+        ]
+      },
+      {
+        department: "Arts, Humanities & Languages",
+        topics: [
+          "Digital Heritage Museum",
+          "Indian Knowledge System Digital Archive",
+          "Virtual Historical Timeline",
+          "Sanskrit/Hindi Digital Learning Tool",
+          "Digital Storytelling Project",
+          "Indian Cultural Heritage Model",
+          "Psychological Awareness Campaign",
+          "Heritage Conservation Model",
+          "Traditional Knowledge Documentation",
+          "Interactive Indian History Exhibition"
+        ]
+      },
+      {
+        department: "Yogic Science & Physical Education",
+        topics: [
+          "Smart Yoga Training System",
+          "Yoga Posture Demonstration Model",
+          "Digital Fitness Tracker",
+          "Student Fitness Assessment Dashboard",
+          "Sports Performance Analysis",
+          "Smart Sports Equipment Concept",
+          "Yoga & Meditation Digital App",
+          "Physical Activity Monitoring System",
+          "Sports Injury Prevention Model",
+          "Healthy Campus Model"
+        ]
+      },
+      {
+        department: "Forensic Science",
+        topics: [
+          "Digital Crime Investigation Concept",
+          "Fingerprint Identification Demonstration",
+          "Cybercrime Awareness Model",
+          "Forensic Evidence Management System",
+          "Crime Scene Reconstruction Model",
+          "Document Examination Demonstration",
+          "Digital Forensic Investigation Workflow",
+          "Forensic Awareness Exhibition",
+          "Evidence Collection Simulation",
+          "AI in Forensic Investigation Concept"
+        ]
+      },
+      {
+        department: "Food Technology & Nutrition",
+        topics: [
+          "Food Adulteration Detection",
+          "Smart Food Storage Concept",
+          "Food Waste Management",
+          "Low-Cost Food Preservation",
+          "Healthy Food Product Development",
+          "Nutrition Awareness Dashboard",
+          "Food Safety Monitoring System",
+          "Sustainable Packaging Model",
+          "Food Processing Demonstration",
+          "Smart Kitchen Concept"
+        ]
+      },
+      {
+        department: "Interdisciplinary Mega Projects",
+        topics: [
+          "Smart Campus 2030 (Open to All)",
+          "Smart Waste Management (ME + CSE + EE + ECE + Env)",
+          "Smart Agriculture (ME + Robotics + CSE + Science)",
+          "Water Conservation System (ME + Civil/Science + CSE + EE)",
+          "Smart Energy Campus (EE + ME + CSE + ECE)",
+          "Women Safety Technology (CSE + ECE + Robotics + Mgmt)",
+          "Rural Technology Innovation (Open to All)",
+          "AI for Education (CSE + Psychology + Mgmt + Languages)",
+          "Green & Sustainable University (Open to All)",
+          "Future Village – Smart & Sustainable (Open to All)"
+        ]
+      }
+    ],
     eligibility: "Student of any Course of GKV.",
     rules: [
       "Individual or team entries are permitted.",
@@ -110,8 +321,225 @@ export const COMPETITIONS = [
     },
     shortDesc: "Present technical paper concepts, architectural designs, sustainable engineering, and research findings through creative posters.",
     overview: "A platform for aspiring researchers and engineers to articulate innovative ideas, emerging technology trends, and sustainable engineering concepts using visual technical posters.",
-    problemStatement: "Design and visually present a comprehensive technical poster on cutting-edge topics such as Renewable Energy, AI in Healthcare, Smart Infrastructure, or Quantum Computing.",
-    eligibility: "Student of any Course of GKV",
+    problemStatement: "Design and visually present a comprehensive technical poster on cutting-edge topics such as Renewable Energy, AI in Healthcare, Smart Infrastructure, or Quantum Computing. Explore proposed topics department-wise below or propose your own innovative topic.",
+    departmentTopics: [
+      {
+        department: "Mechanical Engineering",
+        topics: [
+          "Future of Electric Vehicles",
+          "Hydrogen as Future Fuel",
+          "3D Printing & Additive Manufacturing",
+          "Sustainable Manufacturing",
+          "Green Manufacturing & Green Energy",
+          "Industry 4.0 & Smart Manufacturing",
+          "Advanced Materials for Future Engineering",
+          "Artificial Intelligence in Mechanical Engineering",
+          "Digital Manufacturing & Digital Twins",
+          "Engineering for a Sustainable Future"
+        ]
+      },
+      {
+        department: "Computer Science & Engineering",
+        topics: [
+          "Generative AI: Opportunities & Challenges",
+          "Artificial Intelligence in Education",
+          "Responsible & Ethical AI",
+          "Cybersecurity in the Digital Era",
+          "Internet of Things",
+          "Cloud Computing",
+          "Quantum Computing",
+          "Data Science for Society",
+          "Blockchain Technology",
+          "Future of Human-AI Collaboration"
+        ]
+      },
+      {
+        department: "Electronics & Communication Engineering",
+        topics: [
+          "5G & Future 6G",
+          "Smart Sensors",
+          "Semiconductor Technology",
+          "Satellite Communication",
+          "Wearable Electronics",
+          "IoT & Connected Devices",
+          "VLSI Technology",
+          "Wireless Communication",
+          "Electronics for Smart Cities",
+          "Future Communication Systems"
+        ]
+      },
+      {
+        department: "Electrical Engineering",
+        topics: [
+          "Renewable Energy Technologies",
+          "Smart Grid",
+          "Electric Vehicles & Charging Infrastructure",
+          "Green Hydrogen",
+          "Future of Solar Energy",
+          "Battery & Energy Storage Technology",
+          "Energy Conservation",
+          "Sustainable Power Generation",
+          "AI in Power Systems",
+          "Electrical Engineering for Net-Zero India"
+        ]
+      },
+      {
+        department: "Robotics & Automation",
+        topics: [
+          "AI in Robotics",
+          "Future of Humanoid Robots",
+          "Robots in Healthcare",
+          "Industrial Automation",
+          "Autonomous Vehicles",
+          "Human-Robot Collaboration",
+          "Robotics in Agriculture",
+          "Smart Factory & Industry 4.0",
+          "Autonomous Systems",
+          "Ethics & Challenges in Robotics"
+        ]
+      },
+      {
+        department: "Basic Science & Technology",
+        topics: [
+          "Climate Change & Its Scientific Impact",
+          "Renewable Energy & Future Energy Needs",
+          "Nanotechnology for Society",
+          "Sustainable Chemistry",
+          "Artificial Intelligence in Science",
+          "Biodiversity Conservation",
+          "Water Pollution & Treatment",
+          "Plastic Pollution & Alternatives",
+          "Biotechnology for Sustainable Development",
+          "Science for a Sustainable Future"
+        ]
+      },
+      {
+        department: "Environmental Science",
+        topics: [
+          "Climate Change",
+          "Plastic-Free India",
+          "Water Conservation",
+          "Sustainable Cities",
+          "Net-Zero Campus",
+          "Renewable Energy",
+          "Biodiversity Conservation",
+          "Green Technology",
+          "Environmental Impact of AI/Data Centres",
+          "Role of Youth in Environmental Protection"
+        ]
+      },
+      {
+        department: "Pharmacy",
+        topics: [
+          "Role of AI in Pharmacy",
+          "Drug Safety & Pharmacovigilance",
+          "Herbal Medicines & Modern Pharmacy",
+          "Nanotechnology in Drug Delivery",
+          "Antibiotic Resistance",
+          "Future of Personalized Medicine",
+          "Digital Transformation in Healthcare",
+          "Pharmaceutical Waste Management",
+          "Nutrition & Preventive Healthcare",
+          "Pharmacy for Sustainable Healthcare"
+        ]
+      },
+      {
+        department: "Management & Commerce",
+        topics: [
+          "AI in Business",
+          "Future of Entrepreneurship",
+          "Digital India & Digital Business",
+          "Start-up Ecosystem in India",
+          "Sustainable Business",
+          "FinTech Revolution",
+          "E-Commerce & Consumer Behaviour",
+          "Women Entrepreneurship",
+          "Rural Entrepreneurship",
+          "Business for Atmanirbhar Bharat"
+        ]
+      },
+      {
+        department: "Arts, Humanities & Languages",
+        topics: [
+          "Indian Knowledge System & Modern Education",
+          "Ancient Indian Scientific Contributions",
+          "Sanskrit & Artificial Intelligence",
+          "Indian Heritage & Technology",
+          "Mental Well-Being in Student Life",
+          "Role of Language in Nation Building",
+          "Digital Preservation of Heritage",
+          "Indian Philosophy & Sustainable Living",
+          "Cultural Diversity of India",
+          "Literature, Society & Technology"
+        ]
+      },
+      {
+        department: "Yogic Science & Physical Education",
+        topics: [
+          "Yoga & Modern Lifestyle",
+          "Yoga for Student Well-Being",
+          "Technology in Sports",
+          "AI in Sports Performance",
+          "Fitness & Preventive Health",
+          "Yoga & Sustainable Living",
+          "Sports Science",
+          "Mental Wellness & Physical Activity",
+          "Traditional Indian Practices & Modern Life",
+          "Future of Digital Fitness"
+        ]
+      },
+      {
+        department: "Forensic Science",
+        topics: [
+          "Cyber Forensics",
+          "AI in Crime Investigation",
+          "Digital Evidence",
+          "DNA Forensics",
+          "Fingerprint Science",
+          "Forensic Toxicology",
+          "Cybercrime in the Digital Era",
+          "Future of Forensic Science",
+          "Forensic Science & Justice",
+          "Ethics in Digital Investigation"
+        ]
+      },
+      {
+        department: "Food Technology & Nutrition",
+        topics: [
+          "Food Security & Sustainability",
+          "Food Waste Reduction",
+          "Sustainable Food Packaging",
+          "Food Safety in India",
+          "Nutrition & Healthy Lifestyle",
+          "AI in Food Technology",
+          "Future of Functional Foods",
+          "Traditional Indian Foods & Nutrition",
+          "Sustainable Food Processing",
+          "Food Technology for Rural Development"
+        ]
+      },
+      {
+        department: "Interdisciplinary Poster Themes",
+        topics: [
+          "AI and Future Society",
+          "Engineering for a Developed India",
+          "Innovation for Atmanirbhar Bharat",
+          "Technology for Rural Development",
+          "Smart India – Smart Solutions",
+          "Climate Change & Engineering Solutions",
+          "Green Technology for a Sustainable Future",
+          "Future of Jobs in the Age of AI",
+          "Technology for Women's Safety",
+          "Innovation for Society",
+          "Indian Knowledge System & Modern Technology",
+          "Youth Innovation for Nation Building",
+          "AI + Robotics + IoT: Future Technologies",
+          "Sustainable Development through Innovation",
+          "From Idea to Innovation: Solving Real Problems"
+        ]
+      }
+    ],
+    eligibility: "Student of any Course of GKV.",
     rules: [
       "Individual or team participation.",
       "Standard poster dimensions: A1 size (or printed 3ft x 2ft banner).",
